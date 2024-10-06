@@ -17,7 +17,7 @@
 		<link rel="stylesheet" href="{% static 'bower_components/slick.js/slick/slick-theme.css' %}" />
 		<link rel="stylesheet" href="{% static 'bootstrap/dist/css/bootstrap-custom.min.css' %}" />
 		<link rel="stylesheet" href="{% static 'lib/linecons/style.css' %}" />
-		<link rel="stylesheet" href="{% static 'styles/style.min.css' %}" />
+		<link rel="stylesheet" href="{% static 'styles/style.css' %}" />
 		<link rel="stylesheet" href="{% static 'theme-custom.css' %}" />
 		<link rel="shortcut icon" href="{% static 'favicon.ico' %}" type="image/x-icon'' %}" />
 		<link rel="apple-touch-icon" href="{% static 'apple-touch-icon.png' %}" />
@@ -28,9 +28,10 @@
 		<link rel="apple-touch-icon" sizes="120x120" href="{% static 'apple-touch-icon-120x120.png' %}" />
 		<link rel="apple-touch-icon" sizes="144x144" href="{% static 'apple-touch-icon-144x144.png' %}" />
 		<link rel="apple-touch-icon" sizes="152x152" href="{% static 'apple-touch-icon-152x152.png' %}" />
-	</head>
+
+
 	<body class="state1 background-100-e">
-		<div class="ext-nav background-95-h page-transition">
+		{% comment %} <div class="ext-nav background-95-h page-transition">
 			<div class="view half-height">
 				<img alt class="bg static" src="{% static 'images/placeholders/1920x1200-2.jpg' %}" />
 				<div class="content no-top-padding no-bottom-padding  full-height">
@@ -74,7 +75,7 @@
 					</a>
 				</div>
 			</div>
-		</div>
+		</div> {% endcomment %}
 		<div class="page-border bottom colors-e background-solid"><a href="#top" class="hover-effect">To <span class="highlight">Top</span></a></div>
 		<div class="page-border left colors-e background-solid">
 			<ul>
@@ -85,8 +86,8 @@
 				<li><a href="http://www.skype.com/" target="_blank"><i class="fa fa-skype"></i></a></li>
 			</ul>
 		</div>
-		<!-- BEGIN: Top menu -->
-		<div class="page-border right colors-e background-solid"></div>
+		{% comment %} BEGIN: Top menu {% endcomment %}
+		{% comment %} <div class="page-border right colors-e background-solid"></div>
 		<nav class="navbar navbar-default navbar-fixed-top page-transition colors-e background-solid" role="navigation" id="top-nav">
 			<div class="container">
 				<div class="navbar-header">
@@ -108,10 +109,10 @@
 					</ul>
 				</div>
 			</div>
-		</nav>
-		<!-- END: Top menu -->
+		</nav> {% endcomment %}
+		{% comment %} END: Top menu {% endcomment %}
 		<ul id="dot-scroll" class="colors-e background-solid"></ul>
-		<div class="overlay-window gallery-overlay colors-g background-95-g" data-overlay-zoom="#work .content">
+		{% comment %} <div class="overlay-window gallery-overlay colors-g background-95-g" data-overlay-zoom="#work .content">
 			<div class="overlay-control background-90-b">
 				<a class="previos" href="#"></a>
 				<a class="next" href="#"></a>
@@ -123,19 +124,22 @@
 				<li class="background-highlight-e"></li>
 				<li class="background-highlight-e"></li>
 			</ul>
-		</div>
+		</div> {% endcomment %}
 		<div class="overlay-window map-overlay colors-h background-75-h">
 			<div class="overlay-control background-90-g">
 				<a class="cross" href="#"></a>
 			</div>
 			<div class="overlay-view">
-				<div class="map-canvas" data-latitude="42.487606" data-longitude="-71.115661" data-zoom="14">
+				<div class="text-center">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11308.972317297335!2d107.11484117986508!3d-6.835674908613101!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6853345b62c1bf%3A0xcf33dbde3a3084fa!2sVilla%20Pesona%20Cianjur!5e0!3m2!1sen!2sid!4v1728177471482!5m2!1sid!2sid" width="95%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+				{% comment %} <div class="map-canvas" data-latitude="42.487606" data-longitude="-71.115661" data-zoom="14">
 					<div class="map-marker" data-latitude="42.487606" data-longitude="-71.115661" data-text="Our awesome location"></div>
 					<div class="map-marker" data-latitude="42.485100" data-longitude="-71.113256" data-text="Our sales office"></div>
-				</div>
+				</div> {% endcomment %}
 			</div>
 		</div>
-		<div class="overlay-window credits-overlay colors-g background-95-g">
+		{% comment %} <div class="overlay-window credits-overlay colors-g background-95-g">
 			<div class="overlay-control background-90-b">
 				<a class="cross" href="#"></a>
 			</div>
@@ -180,30 +184,32 @@
 				<li class="background-heading-e"></li>
 				<li class="background-heading-e"></li>
 			</ul>
-		</div>
-		<!-- BEGIN: Page content -->
+		</div> {% endcomment %}
+		{% comment %} BEGIN: Page content {% endcomment %}
 		<section id="home">
 			<div class="view">
-				<img alt class="bg" src="{% static 'images/placeholders/1920x1200-0.jpg' %}" /><img alt class="bg" src="{% static 'images/placeholders/1920x1200-1.jpg' %}" /><img alt class="bg" src="{% static 'images/placeholders/1920x1200-2.jpg' %}" />
+				<img alt class="bg" src="{% static 'images/prewed/146.jpg' %}" /><img alt class="bg" src="{% static 'images/prewed/144.jpg' %}" /><img alt class="bg" src="{% static 'images/prewed/12.jpg' %}" />
 				<div class="content home-lynda full-size colors-e background-0">
 					<div class="container">
 						<div class="row">
 							<div class="col-md-6">
 								<div class="textillate highlight" data-textillate-options="{loop:true, in:{effect:'flipInY', reverse:false}, out:{effect:'flipOutY', reverse:false}}">
 									<ul class="texts">
-										<li>We Are Designers</li>
-										<li>We Are Programmers</li>
+										<li>We Are Inviting You To</li>
+										{% comment %} <li>We Are Programmers</li>
 										<li>We Are Coders</li>
 										<li>We Are Developers</li>
-										<li>We Are Creative</li>
+										<li>We Are Creative</li> {% endcomment %}
 									</ul>
 								</div>
-								<h1 class="heading text-left">SKROLLEX</h1>
-								<p class="box border background-10-b">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec ante tristique elit interdum ullamcorper. Consectetur aenean porta nibh sit amet aliquet pellentesque.
-								</p>
+								<h1 class="heading text-left">Our Wedding</h1>
+								<div class="box border background-10-b">
+									<h6 class="text-white"><strong>Kepada Yth.</strong></h6>
+									<h4 class="highlight">Keluarga Besar Cipetir</h4>
+									<h6 class="text-white"><strong>Di Tempat</strong></h6>
+								</div>
 								<div class="big-separator"></div>
-								<p><a href="#about" class="button background-20-d border">About Us</a><a href="#work" class="button background-20-f border">Our Work</a></p>
+								<p><a href="#" class="button background-70-d text-white border fluid" onclick="playSound();">Buka Undangan</a></p>
 							</div>
 						</div>
 					</div>
@@ -211,7 +217,7 @@
 			</div>
 		</section>
 		<section id="about">
-			<div class="view">
+			{% comment %} <div class="view">
 				<img alt class="bg" src="{% static 'images/placeholders/1920x1200-0.jpg' %}" />
 				<div class="content pane">
 					<div class="container-fluid">
@@ -255,14 +261,22 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> {% endcomment %}
 			<div class="view">
 				<div class="content colors-e background-solid">
 					<div class="container">
-						<h2>About</h2>
-						<p class="header-details"><span class="highlight">We Create</span> Awesome Stuff</p>
-						<p class="lead">We are <span class="highlight">Creative Team</span> located in Kalura, Bovlandia. Tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-						<div class="row">
+						<div class="banner-cell">
+							<img alt src="{% static 'images/logo.png' %}" width="150rem"/>
+						</div>
+						{% comment %} <h2>About</h2>
+						<p class="header-details"><span class="highlight">We Create</span> Awesome Stuff</p> {% endcomment %}
+						<h3>وَمِنْ اٰيٰتِهٖٓ اَنْ خَلَقَ لَكُمْ مِّنْ اَنْفُسِكُمْ اَزْوَاجًا لِّتَسْكُنُوْٓا اِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَّوَدَّةً وَّرَحْمَةً ۗاِنَّ فِيْ ذٰلِكَ لَاٰيٰتٍ لِّقَوْمٍ يَّتَفَكَّرُوْنَ</h3>
+						<p class="lead">
+							"Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang. Sungguh, pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir."
+							<br>
+							(QS Ar-Rum: 21)
+						</p>
+						{% comment %} <div class="row">
 							<div class="col-md-4">
 								<div class="col-icon">
 									<i class="li_bulb"></i>
@@ -290,21 +304,101 @@
 									<p>Sed porta erat vel ipsum maximus, eget maximus est maximus. Maecenas at venenatis nibh, sit amet suscipit odio. In feugiat vehicula dui. In felis enim, maximus a dolor semper efficitur elit euismod magna quis commodo.</p>
 								</div>
 							</div>
-						</div>
+						</div> {% endcomment %}
 					</div>
 				</div>
 			</div>
 			<div class="view" id="how-we-work">
-				<img alt class="bg" src="{% static 'images/placeholders/1920x1200-1.jpg' %}" /><img alt class="bg" src="{% static 'images/placeholders/1920x1200-2.jpg' %}" />
+				<img alt class="bg" src="{% static 'images/prewed/137.jpg' %}" /><img alt class="bg" src="{% static 'images/prewed/183.jpg' %}" />
 				<div class="content colors-h">
 					<div class="container">
-						<h3><span class="highlight">How</span> We Work</h3>
+						<h3>بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</h3>
 						<div class="row">
 							<div class="col-md-6 col-md-offset-3">
-								<p class="text-center">Aliquam fermentum massa ac est sollicitudin, at ultricies ligula tristique. Cras finibus, nulla ac convallis feugiat, nisl nisl lobortis est, eget auctor velit magna vel nunc. Donec nec eros rhoncus.</p>
+								<p class="lead text-center">
+									Assalamu'alaikum Warahmatullaahi Wabarakaatuh <br>
+									Dengan Rahmat dan Kasih Sayang Allah SWT Yang Telah Mempertemukan Kami :
+								</p>
 							</div>
 						</div>
-						<div class="row icon-set">
+						<div class="row">
+							<div class="col-md-3 col-md-offset-3 col-sm-6  col-xs-6">
+								<div class="hover-overlay">
+									<img alt="Mike Johnson" src="{% static 'images/prewed/groom.jpg' %}" title="Mike Johnson" class="fluid-width">
+									<div class="overlay background-90-b">
+										<div>
+											<p class="text-center text-uppercase heading-b">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+											</p>
+											<div class="separator-small"></div>
+											<p class="text-center">
+												<a target="_blank" href="https://www.facebook.com/"><i class="fa fa-facebook heading-b"></i></a>
+												<a target="_blank" href="http://www.youtube.com/"><i class="fa fa-youtube heading-b"></i></a>
+												<a target="_blank" href="https://github.com/"><i class="fa fa-github heading-b"></i></a>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="caption">
+									<p style="margin: 0px">
+										<span class="title">Wizdan Mohammad Gibran Shodri, S.Tr.Kom.</span>
+									</p>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-6">
+								<div class="hover-overlay">
+									<img alt="Jessica Specter" src="{% static 'images/prewed/bride.jpg' %}" title="Jessica Specter" class="fluid-width">
+									<div class="overlay background-90-b">
+										<div>
+											<p class="text-center text-uppercase heading-b">
+												Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+											</p>
+											<div class="separator-small"></div>
+											<p class="text-center">
+												<a target="_blank" href="https://twitter.com/"><i class="fa fa-twitter heading-b"></i></a>
+												<a target="_blank" href="https://www.linkedin.com/"><i class="fa fa-linkedin heading-b"></i></a>
+												<a target="_blank" href="https://plus.google.com/"><i class="fa fa-google-plus heading-b"></i></a>
+												<a target="_blank" href="https://vimeo.com/"><i class="fa fa-vimeo-square heading-b"></i></a>
+												<a target="_blank" href="https://www.tumblr.com/"><i class="fa fa-tumblr heading-b"></i></a>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="caption">
+									<p style="margin: 0px">
+										<span class="title">Ajeng Rizki <br/>Novianti, S.Ds.</span>
+									</p>
+								</div>
+								
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3 col-md-offset-3 col-sm-6  col-xs-6">
+								<div class="caption">
+									<p>
+										<span class="highlight">The Groom</span>
+									</p>
+									<p class="text-white">
+										Putra pertama dari <br/>
+										Bapak Mohammad Ihsan Sodri, S.Pd <br />
+										dan Ibu Ai Ratnasasi, S.Pd.
+									</p>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6  col-xs-6">
+								<div class="caption">
+									<p>
+										<span class="highlight">The Bride</span>
+									</p>
+									<p class="text-white">
+										Putra ketiga dari <br/>
+										Bapak Uce Sopandi <br />
+										dan Ibu Neneh Supinah
+									</p>
+								</div>
+							</div>
+						</div>
+						{% comment %} <div class="row icon-set">
 							<div class="col-md-3 text-center">
 								<p>
 									<i class="li_eye circle scroll-in-animation background-20 heading" data-animation="fadeInUp"></i>
@@ -332,6 +426,475 @@
 								</p>
 								<p class="title"><span class="underline-text">Experimental</span></p>
 								<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+							</div>
+						</div> {% endcomment %}
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="process">
+			<div class="view">
+				<div class="content colors-e background-solid">
+					<div class="container">
+						<h2>03 November<span class="highlight"> 2024</span></h2>
+						<p class="header-details"><span class="highlight">Hari Minggu, </span>Villa Pesona Cianjur</p>
+						{% comment %} <p class="lead">Curabitur eget nulla ut neque aliquam dictum. Nam sollicitudin leo dui, non malesuada felis aliquam non. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus finibus tempor neque vel scelerisque. Cras nec ex ut eleifend mollis ut a nibh. Vivamus commodo est sit amet ultricies.</p> {% endcomment %}
+						<div class="process">
+							<div class="row process-row">
+								<div class="col-md-6 process-step">
+									<div class="process-box"><i class="li_diamond heading"></i></div>
+									<p class="title">Akad</p>
+									<p class="text-center">09.00 - 11.00</p>
+								</div>
+								<div class="col-md-6 process-step">
+									<div class="process-box"><i class="li_food heading"></i></div>
+									<p class="title">Resepsi</p>
+									<p class="text-center">11.00 - 14.00</p>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							{% comment %} <div class="text-center">
+								<iframe style="padding: 1px" class="box border" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d39243.03945284116!2d107.1164922!3d-6.8374357!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6853345b62c1bf%3A0xcf33dbde3a3084fa!2sVilla%20Pesona%20Cianjur!5e1!3m2!1sen!2sid!4v1728176522172!5m2!1sen!2sid" width="95%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+							</div> {% endcomment %}
+							<div class="text-center">
+								<a class="map-open button background-lite-b border-heading-b heading-b" data-map-overlay=".map-overlay" href="#">Lihat lokasi</a>
+							</div>
+							{% comment %} <div class="col-md-6 col-md-offset-3">
+								<p class="text-center">Aliquam fermentum massa ac est sollicitudin, at ultricies ligula tristique. Cras finibus, nulla ac convallis feugiat, nisl nisl lobortis est, eget auctor velit magna vel nunc. Donec nec eros rhoncus.</p>
+							</div> {% endcomment %}
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="view" id="numbers">
+				<img alt class="bg" src="{% static 'images/journey/sma-1.jpg' %}" />
+				<img alt class="bg" src="{% static 'images/journey/sma-2.jpg' %}" />
+				<img alt class="bg" src="{% static 'images/journey/smp-1.jpg' %}" />
+				<img alt class="bg" src="{% static 'images/journey/smp-2.jpg' %}" />
+				<div class="content half-size colors-h">
+					<div class="container-fluid">
+						<h3>Our <span class="highlight">Journey</span></h3>
+						<p class="title"><span class="highlight">Perjalanan panjang</span> menuju hari bahagia</p>
+						<div class="row counters">
+							<div class="col-md-3 counter background-35-b">
+								<div class="count row heading">Pertemuan</div>
+								<div>
+									Awal bertemu saat kelas 2 SMP tahun 2011. Kami menempuh sekolah yang sama dan selalu berpapasan pada saat perkumpulan organisasi sastra. <br/><br/>
+								</div>
+							</div>
+							<div class="col-md-3 counter background-35-h">
+								<div class="count row heading">Pendekatan</div>
+								<div>
+									Mulai kelas 2 SMA tahun 2012, kami semakin dekat. Kami masuk jurusan yang berbeda: IPA & IPS, berada di gedung yang berbeda, hingga kuliah dan kerja pun di kota yang berbeda. Namun, kami tetap bersama.
+								</div>
+							</div>
+							<div class="col-md-3 counter background-35-b">
+								<div class="count row heading">Pelamaran</div>
+								<div>
+									Bertahun-tahun bersama, akhirnya kami memutuskan untuk melangkah ke jenjang berikutnya. Alhamdulillah, kami melaksanakan prosesi lamaran tepat di tahun baru Islam 1446 H.
+								</div>
+							</div>
+							<div class="col-md-3 counter background-35-h">
+								<div class="count row heading">Nikahan</div>
+								<div>
+									Atas Rahmat Allah SWT, Insyaallah kami akan melaksanakan prosesi pernikahan pada tanggal 03 November 2024. Bismillahirrahmanirrahim, kami melangkah bersama.
+								</div>
+							</div>
+						</div>
+					</div>
+					{% comment %} <div class="container">
+						<p class="text-center ">Donec vulputate sit amet dolor vel pharetra donec pharetra.</p>
+					</div> {% endcomment %}
+				</div>
+			</div>
+		</section>
+		<section id="work">
+			<div class="view">
+				<div class="content no-bottom-padding colors-e background-solid">
+					<div class="container">
+						<h2>Moments</span></h2>
+						{% comment %} <p class="header-details"><span class="highlight">Some Recent</span> Projects</p> {% endcomment %}
+						{% comment %} <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p> {% endcomment %}
+					</div>
+					<div class="gallery colors-h background-solid" data-default-group="all" data-overlay=".gallery-overlay">
+						<div class="container-fluid">
+							<div class="filter">
+								<ul class="nav nav-pills text-center">
+									<li><a class="hover-effect" data-group="all" href="#">All</a></li>
+									<li><a class="hover-effect" data-group="kecil" href="#">Kecil</a></li>
+									<li><a class="hover-effect" data-group="remaja" href="#">Remaja</a></li>
+									<li><a class="hover-effect" data-group="dewasa" href="#">Dewasa</a></li>
+									<li><a class="hover-effect" data-group="prewed" href="#">Prewed</a> </li>
+								</ul>
+							</div>
+							<div class="row">
+								<div class="grid">
+									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["kecil"]'>
+										<a href="#" class="hover-overlay">
+											<img alt="Kecil Aa" src="{% static 'images/gallery/kecil-aa.jpg' %}" />
+											<div class="overlay background-90-a">
+												<div>
+													<p class="title heading-a">Wizdan Bocil</p>
+													<p class="text-center heading-a"><strong>Dari kecil udah doyan es krim.</strong></p>
+												</div>
+												
+											</div>
+										</a>
+									</div>
+									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["kecil"]'>
+										<a href="#" class="hover-overlay">
+											<img alt="Kecil Riri" src="{% static 'images/gallery/kecil-riri.jpg' %}" />
+											<div class="overlay background-90-a">
+												<div>
+													<p class="title heading-a">Ajeng Bocil</p>
+													<p class="text-center heading-a"><strong>Bergaya abis pensi.</strong></p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["remaja"]'>
+										<a href="#" class="hover-overlay">
+											<img alt="SMP Riri" src="{% static 'images/gallery/smp-riri.jpg' %}" />
+											<div class="overlay background-90-a">
+												<div>
+													<p class="title heading-a">Terlihat Kecewa</p>
+													<p class="text-center heading-a"><strong>Mukanya kurang dikondisikan.</strong></p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["remaja"]'>
+										<a href="#" class="hover-overlay">
+											<img alt="SMP Aa" src="{% static 'images/gallery/smp-aa.jpg' %}" />
+											<div class="overlay background-90-a">
+												<div>
+													<p class="title heading-a">Muka Ganteng</p>
+													<p class="text-center heading-a"><strong>Gak nemu lagi gambar yang bagus.</strong></p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["remaja"]'>
+										<a href="#" class="hover-overlay">
+											<img alt="RBS" src="{% static 'images/gallery/rbs.jpg' %}" />
+											<div class="overlay background-90-a">
+												<div>
+													<p class="title heading-a">Di Ruang Sastra</p>
+													<p class="text-center heading-a"><strong>Hayo tebak kami berdua yang mana?</strong></p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["remaja"]'>
+										<a href="#" class="hover-overlay">
+											<img alt="2013, Gunung Padang" src="{% static 'images/gallery/2013-gunung-padang.jpg' %}" />
+											<div class="overlay background-90-a">
+												<div>
+													<p class="title heading-a">2013, Gunung Padang</p>
+													<p class="text-center heading-a"><strong>Maen-maen, lihat alam.</strong></p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["remaja"]'>
+										<a href="#" class="hover-overlay">
+											<img alt="2015 Jan 15, Taman Bunga" src="{% static 'images/gallery/20150115-taman-bunga.jpg' %}" />
+											<div class="overlay background-90-a">
+												<div>
+													<p class="title heading-a">2015 Jan 15, Taman Bunga</p>
+													<p class="text-center heading-a"><strong>Awal tahun liburan dulu.</strong></p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["dewasa"]'>
+										<a href="#" class="hover-overlay">
+											<img alt="2016 Jan 11, Cibodas" src="{% static 'images/gallery/20160111-cibodas.jpg' %}" />
+											<div class="overlay background-90-a">
+												<div>
+													<p class="title heading-a">2016 Jan 11, Cibodas</p>
+													<p class="text-center heading-a"><strong>Kabur, suntuk kuliah teroz.</strong></p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["dewasa"]'>
+										<a href="#" class="hover-overlay">
+											<img alt="2016 Jul 25, Situ Gunung" src="{% static 'images/gallery/20160725-situ-gunung.jpg' %}" />
+											<div class="overlay background-90-a">
+												<div>
+													<p class="title heading-a">2016 Jul 25, Situ Gunung</p>
+													<p class="text-center heading-a"><strong>Kecewa foto dari google map nya hasil photoshop.</strong></p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["dewasa"]'>
+										<a href="#" class="hover-overlay">
+											<img alt="2017 Des 02, UI" src="{% static 'images/gallery/20171202-ui.jpg' %}" />
+											<div class="overlay background-90-a">
+												<div>
+													<p class="title heading-a">2017 Des 02, UI</p>
+													<p class="text-center heading-a"><strong>Mampir ke UI sehabis kunjungan ke Islamic Center.</strong></p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["dewasa"]'>
+										<a href="#" class="hover-overlay">
+											<img alt="2018 Apr 27, Nikahan Kakak" src="{% static 'images/gallery/20180407-nikahan-kak-sendi.jpg' %}" />
+											<div class="overlay background-90-a">
+												<div>
+													<p class="title heading-a">2018 Apr 27, Nikahan Kakak</p>
+													<p class="text-center heading-a"><strong>Kakak udah nikah, kita? ...ahem.</strong></p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["dewasa"]'>
+										<a href="#" class="hover-overlay">
+											<img alt="2018 Okt 01, Dufan" src="{% static 'images/gallery/20181001-dufan.jpg' %}" />
+											<div class="overlay background-90-a">
+												<div>
+													<p class="title heading-a">2018 Okt 01, Dufan</p>
+													<p class="text-center heading-a"><strong>Pas tahu ada info diskon langsung ngejadwalin.</strong></p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["dewasa"]'>
+										<a href="#" class="hover-overlay">
+											<img alt="KONTRAS" src="{% static 'images/gallery/20181001-dufan-2.jpg' %}" />
+											<div class="overlay background-90-a">
+												<div>
+													<p class="title heading-a">KONTRAS</p>
+													<p class="text-center heading-a"><strong>Beda jauh banget ini warna kulit.</strong></p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["dewasa"]'>
+										<a href="#" class="hover-overlay">
+											<img alt="2018 Okt 13, Wisuda Wizdan" src="{% static 'images/gallery/20181013-wisuda-aa.jpg' %}" />
+											<div class="overlay background-90-a">
+												<div>
+													<p class="title heading-a">2018 Okt 13, Wisuda Wizdan</p>
+													<p class="text-center heading-a"><strong>Lulus jadi programmer, jadinya bisa bikin website invitation sendiri.</strong></p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["dewasa"]'>
+										<a href="#" class="hover-overlay">
+											<img alt="2018 Des 23, Nikahan Teman" src="{% static 'images/gallery/20181223-nikahan-teman.jpg' %}" />
+											<div class="overlay background-90-a">
+												<div>
+													<p class="title heading-a">2018 Des 23, Nikahan Teman</p>
+													<p class="text-center heading-a"><strong>Nebeng di nikahan teman buat ketemuan.</strong></p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["dewasa"]'>
+										<a href="#" class="hover-overlay">
+											<img alt="2019 Feb 19, Farmhouse" src="{% static 'images/gallery/20190219-farmhouse.jpg' %}" />
+											<div class="overlay background-90-a">
+												<div>
+													<p class="title heading-a">2019 Feb 19, Farmhouse</p>
+													<p class="text-center heading-a"><strong>Ci Aa pingin tahu Farmhouse Susu Lembang tuh kayak apa. Beli susu nya mah da enggak.</strong></p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["dewasa"]'>
+										<a href="#" class="hover-overlay">
+											<img alt="Photobox Sebelum Wisuda" src="{% static 'images/gallery/20190219-photobox.jpg' %}" />
+											<div class="overlay background-90-a">
+												<div>
+													<p class="title heading-a">Photobox Sebelum Wisuda</p>
+													<p class="text-center heading-a"><strong>Wisudanya Ajeng masih 2 bulan lagi, fotonya mah sekarang aja.</strong></p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["dewasa"]'>
+										<a href="#" class="hover-overlay">
+											<img alt="2019 Apr 06, Wisuda Ajeng" src="{% static 'images/gallery/20190406-wisuda-riri.jpg' %}" />
+											<div class="overlay background-90-a">
+												<div>
+													<p class="title heading-a">2019 Apr 06, Wisuda Ajeng</p>
+													<p class="text-center heading-a"><strong>Congrats! Sekarang bisa desain layout pernikahan sendiri.</strong></p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["dewasa"]'>
+										<a href="#" class="hover-overlay">
+											<img alt="2021 Mei 15, Kampoeng Jati" src="{% static 'images/gallery/20210515-kampung-jati.jpg' %}" />
+											<div class="overlay background-90-a">
+												<div>
+													<p class="title heading-a">2021 Mei 15, Kampoeng Jati</p>
+													<p class="text-center heading-a"><strong>Bebas dari Covid, liburan lagi kita. YAY!</strong></p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["dewasa"]'>
+										<a href="#" class="hover-overlay">
+											<img alt="2022 Jan 01, Curug Cikondang" src="{% static 'images/gallery/20220101-curug-cikondang.jpg' %}" />
+											<div class="overlay background-90-a">
+												<div>
+													<p class="title heading-a">2022 Jan 01, Curug Cikondang</p>
+													<p class="text-center heading-a"><strong>Curugnya bagus kan. Mampir yuk ke Cianjur.</strong></p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["dewasa"]'>
+										<a href="#" class="hover-overlay">
+											<img alt="2022 Mar 06, Nikahan Teman" src="{% static 'images/gallery/20220306-nikahan-teman.jpg' %}" />
+											<div class="overlay background-90-a">
+												<div>
+													<p class="title heading-a">2022 Mar 06, Nikahan Teman</p>
+													<p class="text-center heading-a"><strong>Biasa kalau ada nikahan numpang foto.</strong></p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["dewasa"]'>
+										<a href="#" class="hover-overlay">
+											<img alt="2022 Des 08, Nikahan Bibi" src="{% static 'images/gallery/20221208-nikahan-sani.jpg' %}" />
+											<div class="overlay background-90-a">
+												<div>
+													<p class="title heading-a">2022 Des 08, Nikahan Bibi</p>
+													<p class="text-center heading-a"><strong>Bibi sekarang menikah, Sepertinya waktu kita mulai dekat.</strong></p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["dewasa"]'>
+										<a href="#" class="hover-overlay">
+											<img alt="2023 Agu 06, Nikahan Teman" src="{% static 'images/gallery/20230806-nikahan-teman.jpg' %}" />
+											<div class="overlay background-90-a">
+												<div>
+													<p class="title heading-a">2023 Agu 06, Nikahan Teman</p>
+													<p class="text-center heading-a"><strong>Mau jauh mau dekat tetap selama diundang tetap dateng buat foto-foto.</strong></p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["dewasa"]'>
+										<a href="#" class="hover-overlay">
+											<img alt="2023 Agu 17, Ice Skating" src="{% static 'images/gallery/20230817-ice-skating.jpg' %}" />
+											<div class="overlay background-90-a">
+												<div>
+													<p class="title heading-a">2023 Agu 17, Ice Skating</p>
+													<p class="text-center heading-a"><strong>Diajak Ice Skating bareng temen, jatuh mooloo.</strong></p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["dewasa"]'>
+										<a href="#" class="hover-overlay">
+											<img alt="2023 Okt 14, Nikahan Teman" src="{% static 'images/gallery/20231014-nikahan-teman.jpg' %}" />
+											<div class="overlay background-90-a">
+												<div>
+													<p class="title heading-a">2023 Okt 14, Nikahan Teman</p>
+													<p class="text-center heading-a"><strong>Jadi moment buat ngumpul kalau ada nikahan tuh.</strong></p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["dewasa"]'>
+										<a href="#" class="hover-overlay">
+											<img alt="2023 Nov 05, Nikahan Teman" src="{% static 'images/gallery/20231105-nikahan-teman.jpg' %}" />
+											<div class="overlay background-90-a">
+												<div>
+													<p class="title heading-a">2023 Nov 05, Nikahan Teman</p>
+													<p class="text-center heading-a"><strong>Kecolongan helm habis dari sini tuh, sedih.</strong></p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["dewasa"]'>
+										<a href="#" class="hover-overlay">
+											<img alt="2023 Des 19, Cincin Lamaran" src="{% static 'images/gallery/20231209-cincin-lamaran.jpg' %}" />
+											<div class="overlay background-90-a">
+												<div>
+													<p class="title heading-a">2023 Des 19, Cincin Lamaran</p>
+													<p class="text-center heading-a"><strong>Nemu cincin couple yang cocok, tinggal nunggu jadi.</strong></p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["dewasa"]'>
+										<a href="#" class="hover-overlay">
+											<img alt="2023 Des 10, Nikahan Teman" src="{% static 'images/gallery/20231210-nikahan-teman.jpg' %}" />
+											<div class="overlay background-90-a">
+												<div>
+													<p class="title heading-a">2023 Des 10, Nikahan Teman</p>
+													<p class="text-center heading-a"><strong>Foto dulu sebelum masuk kondangan.</strong></p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["dewasa"]'>
+										<a href="#" class="hover-overlay">
+											<img alt="2023 Feb 16, Antar Umroh" src="{% static 'images/gallery/20240216-antar-umroh.jpg' %}" />
+											<div class="overlay background-90-a">
+												<div>
+													<p class="title heading-a">2023 Feb 16, Antar Umroh</p>
+													<p class="text-center heading-a"><strong>Semoga do'a dikabul.</strong></p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["dewasa"]'>
+										<a href="#" class="hover-overlay">
+											<img alt="2024 Apr 08, Qbig" src="{% static 'images/gallery/20240408-qbig.jpg' %}" />
+											<div class="overlay background-90-a">
+												<div>
+													<p class="title heading-a">2024 Apr 08, Qbig</p>
+													<p class="text-center heading-a"><strong>Main di tempat yang deket aja, udah kerja susah nyari waktu.</strong></p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["dewasa"]'>
+										<a href="#" class="hover-overlay">
+											<img alt="Sepatu (Gak Jadi)" src="{% static 'images/gallery/20240408-sepatu.jpg' %}" />
+											<div class="overlay background-90-a">
+												<div>
+													<p class="title heading-a">Sepatu (Gak Jadi)</p>
+													<p class="text-center heading-a"><strong>Niat mau beli pas balik sini udah habis, hiks.</strong></p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["dewasa"]'>
+										<a href="#" class="hover-overlay">
+											<img alt="Ied 1445 H" src="{% static 'images/gallery/20240411-ied-1445h.jpg' %}" />
+											<div class="overlay background-90-a">
+												<div>
+													<p class="title heading-a">Ied 1445 H</p>
+													<p class="text-center heading-a"><strong>Mohon maaf lahir batin.</strong></p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["dewasa"]'>
+										<a href="#" class="hover-overlay">
+											<img alt="2024 Apr 15, Hayyu Park" src="{% static 'images/gallery/20240415-hayyu-park.jpg' %}" />
+											<div class="overlay background-90-a">
+												<div>
+													<p class="title heading-a">2024 Apr 15, Hayyu Park</p>
+													<p class="text-center heading-a"><strong>Rencananya sih survey tempat, sekalian aja nge-date.</strong></p>
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -585,248 +1148,7 @@
 				</div>
 			</div>
 		</section>
-		<section id="work">
-			<div class="view">
-				<div class="content no-bottom-padding colors-e background-solid">
-					<div class="container">
-						<h2>Our <span class="highlight">Work</span></h2>
-						<p class="header-details"><span class="highlight">Some Recent</span> Projects</p>
-						<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
-					</div>
-					<div class="gallery colors-h background-solid" data-default-group="all" data-overlay=".gallery-overlay">
-						<div class="container-fluid">
-							<div class="filter">
-								<ul class="nav nav-pills text-center">
-									<li><a class="hover-effect" data-group="all" href="#">All</a></li>
-									<li><a class="hover-effect" data-group="web" href="#">Web</a></li>
-									<li><a class="hover-effect" data-group="video" href="#">Video</a></li>
-									<li><a class="hover-effect" data-group="photography" href="#">Photography</a></li>
-									<li><a class="hover-effect" data-group="design" href="#">Design</a> </li>
-								</ul>
-							</div>
-							<div class="row">
-								<div class="grid">
-									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["design"]'>
-										<a href="#!portfolio-item-1.html" class="hover-overlay">
-											<img alt="Project 1" src="{% static 'images/placeholders/500x400-0.jpg' %}" />
-											<div class="overlay background-90-a">
-												<div class="hidden-xs">
-													<p class="title heading-a">Image</p>
-													<p class="text-center heading-a"><strong>Excepteur sint lorem ipsum dolor sit amet consectetur.</strong></p>
-													<p class="text-center"><i class="fa fa-picture-o heading-a"></i></p>
-												</div>
-											</div>
-										</a>
-									</div>
-									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["photography", "web", "video"]'>
-										<a href="#!portfolio-item-2.html" class="hover-overlay">
-											<img alt="Project 2" src="{% static 'images/placeholders/500x400-1.jpg' %}" />
-											<div class="overlay background-90-a">
-												<div class="hidden-xs">
-													<p class="title heading-a">YouTube Video</p>
-													<p class="text-center heading-a"><strong>Excepteur sint lorem ipsum dolor sit amet consectetur.</strong></p>
-													<p class="text-center"><i class="fa fa-youtube-square heading-a"></i></p>
-												</div>
-											</div>
-										</a>
-									</div>
-									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["photography", "design"]'>
-										<a href="#!portfolio-item-3.html" class="hover-overlay">
-											<img alt="Project 3" src="{% static 'images/placeholders/500x400-2.jpg' %}" />
-											<div class="overlay background-90-a">
-												<div class="hidden-xs">
-													<p class="title heading-a">Slider</p>
-													<p class="text-center heading-a"><strong>Excepteur sint lorem ipsum dolor sit amet consectetur.</strong></p>
-													<p class="text-center"><i class="fa fa-th heading-a"></i></p>
-												</div>
-											</div>
-										</a>
-									</div>
-									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["photography", "web", "video"]'>
-										<a href="#!portfolio-item-4.html" class="hover-overlay">
-											<img alt="Project 4" src="{% static 'images/placeholders/500x400-0.jpg' %}" />
-											<div class="overlay background-90-a">
-												<div class="hidden-xs">
-													<p class="title heading-a">Vimeo Video</p>
-													<p class="text-center heading-a"><strong>Excepteur sint lorem ipsum dolor sit amet consectetur.</strong></p>
-													<p class="text-center"><i class="fa fa-vimeo-square heading-a"></i></p>
-												</div>
-											</div>
-										</a>
-									</div>
-									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["photography", "design"]'>
-										<a href="#!portfolio-item-5.html" class="hover-overlay">
-											<img alt="Project 5" src="{% static 'images/placeholders/500x400-1.jpg' %}" />
-											<div class="overlay background-90-a">
-												<div class="hidden-xs">
-													<p class="title heading-a">Slider</p>
-													<p class="text-center heading-a"><strong>Excepteur sint lorem ipsum dolor sit amet consectetur.</strong></p>
-													<p class="text-center"><i class="fa fa-th heading-a"></i></p>
-												</div>
-											</div>
-										</a>
-									</div>
-									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["photography", "web", "design"]'>
-										<a href="#!portfolio-item-6.html" class="hover-overlay">
-											<img alt="Project 6" src="{% static 'images/placeholders/500x400-2.jpg' %}" />
-											<div class="overlay background-90-a">
-												<div class="hidden-xs">
-													<p class="title heading-a">Image</p>
-													<p class="text-center heading-a"><strong>Excepteur sint lorem ipsum dolor sit amet consectetur.</strong></p>
-													<p class="text-center"><i class="fa fa-picture-o heading-a"></i></p>
-												</div>
-											</div>
-										</a>
-									</div>
-									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["design", "video", "web"]'>
-										<a href="#!portfolio-item-7.html" class="hover-overlay">
-											<img alt="Project 7" src="{% static 'images/placeholders/500x400-0.jpg' %}" />
-											<div class="overlay background-90-a">
-												<div class="hidden-xs">
-													<p class="title heading-a">Vimeo Video</p>
-													<p class="text-center heading-a"><strong>Excepteur sint lorem ipsum dolor sit amet consectetur.</strong></p>
-													<p class="text-center"><i class="fa fa-vimeo-square heading-a"></i></p>
-												</div>
-											</div>
-										</a>
-									</div>
-									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["web"]'>
-										<a href="#!portfolio-item-8.html" class="hover-overlay">
-											<img alt="Project 8" src="{% static 'images/placeholders/500x400-1.jpg' %}" />
-											<div class="overlay background-90-a">
-												<div class="hidden-xs">
-													<p class="title heading-a">Image</p>
-													<p class="text-center heading-a"><strong>Excepteur sint lorem ipsum dolor sit amet consectetur.</strong></p>
-													<p class="text-center"><i class="fa fa-picture-o heading-a"></i></p>
-												</div>
-											</div>
-										</a>
-									</div>
-									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["photography", "design", "video", "web"]'>
-										<a href="#!portfolio-item-9.html" class="hover-overlay">
-											<img alt="Project 9" src="{% static 'images/placeholders/500x400-2.jpg' %}" />
-											<div class="overlay background-90-a">
-												<div class="hidden-xs">
-													<p class="title heading-a">YouTube Video</p>
-													<p class="text-center heading-a"><strong>Excepteur sint lorem ipsum dolor sit amet consectetur.</strong></p>
-													<p class="text-center"><i class="fa fa-youtube-square heading-a"></i></p>
-												</div>
-											</div>
-										</a>
-									</div>
-									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["photography", "design"]'>
-										<a href="#!portfolio-item-10.html" class="hover-overlay">
-											<img alt="Project 10" src="{% static 'images/placeholders/500x400-0.jpg' %}" />
-											<div class="overlay background-90-a">
-												<div class="hidden-xs">
-													<p class="title heading-a">Vimeo Video</p>
-													<p class="text-center heading-a"><strong>Excepteur sint lorem ipsum dolor sit amet consectetur.</strong></p>
-													<p class="text-center"><i class="fa fa-vimeo-square heading-a"></i></p>
-												</div>
-											</div>
-										</a>
-									</div>
-									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["photography", "web"]'>
-										<a href="#!portfolio-item-11.html" class="hover-overlay">
-											<img alt="Project 11" src="{% static 'images/placeholders/500x400-1.jpg' %}" />
-											<div class="overlay background-90-a">
-												<div class="hidden-xs">
-													<p class="title heading-a">Image</p>
-													<p class="text-center heading-a"><strong>Excepteur sint lorem ipsum dolor sit amet consectetur.</strong></p>
-													<p class="text-center"><i class="fa fa-picture-o heading-a"></i></p>
-												</div>
-											</div>
-										</a>
-									</div>
-									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["web", "design"]'>
-										<a href="#!portfolio-item-12.html" class="hover-overlay">
-											<img alt="Project 12" src="{% static 'images/placeholders/500x400-2.jpg' %}" />
-											<div class="overlay background-90-a">
-												<div class="hidden-xs">
-													<p class="title heading-a">Slider</p>
-													<p class="text-center heading-a"><strong>Excepteur sint lorem ipsum dolor sit amet consectetur.</strong></p>
-													<p class="text-center"><i class="fa fa-th heading-a"></i></p>
-												</div>
-											</div>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="process">
-			<div class="view">
-				<div class="content colors-e background-solid">
-					<div class="container">
-						<h2>Our <span class="highlight">Process</span></h2>
-						<p class="header-details"><span class="highlight">We Make</span> Our Customers Happy</p>
-						<p class="lead">Curabitur eget nulla ut neque aliquam dictum. Nam sollicitudin leo dui, non malesuada felis aliquam non. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus finibus tempor neque vel scelerisque. Cras nec ex ut eleifend mollis ut a nibh. Vivamus commodo est sit amet ultricies.</p>
-						<div class="process">
-							<div class="row process-row">
-								<div class="col-md-3 process-step">
-									<div class="process-box"><i class="li_search heading"></i></div>
-									<p class="title">Research</p>
-									<p class="text-center">Vestibulum placerat, ipsum vel mollis ornare, libero ex dapibus diam, gravida tempor.</p>
-								</div>
-								<div class="col-md-3 process-step">
-									<div class="process-box"><i class="li_pen heading"></i></div>
-									<p class="title">Concept</p>
-									<p class="text-center">Vestibulum vel dictum dolor, eget luctus risus. Nullam scelerisque viverra nisl et vehicula, in ut tellus.</p>
-								</div>
-								<div class="col-md-3 process-step">
-									<div class="process-box"><i class="li_settings heading"></i></div>
-									<p class="title">Develop</p>
-									<p class="text-center">Mauris venenatis vulputate ligula eu finibus. Donec pretium libero lacus, vitae maximus purus dapibus.</p>
-								</div>
-								<div class="col-md-3 process-step">
-									<div class="process-box"><i class="li_paperplane heading"></i></div>
-									<p class="title">Test</p>
-									<p class="text-center">Proin gravida, est sed vestibulum cursus, enim libero sollicitudin lacus, vel ornare nunc.</p>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-6 col-md-offset-3">
-								<p class="text-center">Aliquam fermentum massa ac est sollicitudin, at ultricies ligula tristique. Cras finibus, nulla ac convallis feugiat, nisl nisl lobortis est, eget auctor velit magna vel nunc. Donec nec eros rhoncus.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="view" id="numbers">
-				<img alt class="bg" src="{% static 'images/placeholders/1920x1200-0.jpg' %}" /><img alt class="bg" src="{% static 'images/placeholders/1920x1200-1.jpg' %}" />
-				<div class="content half-size colors-h">
-					<div class="container-fluid">
-						<h3>Our <span class="highlight">Numbers</span></h3>
-						<p class="title"><span class="highlight">Some of the</span> cool facts about us</p>
-						<div class="row counters">
-							<div class="col-md-3 counter background-35-b">
-								<div class="count player row heading background-10-light">210</div>
-								<div class="caption">Projects</div>
-							</div>
-							<div class="col-md-3 counter background-35-h">
-								<div class="count player row heading background-10-light">120</div>
-								<div class="caption">Clients</div>
-							</div>
-							<div class="col-md-3 counter background-35-b">
-								<div class="count player row heading background-10-light">3459</div>
-								<div class="caption">Followers</div>
-							</div>
-							<div class="col-md-3 counter background-35-h">
-								<div class="count player row heading background-10-light">7</div>
-								<div class="caption">Years</div>
-							</div>
-						</div>
-					</div>
-					<div class="container">
-						<p class="text-center ">Donec vulputate sit amet dolor vel pharetra donec pharetra.</p>
-					</div>
-				</div>
-			</div>
-		</section>
+
 		<section id="skills">
 			<div class="view">
 				<div class="content colors-e background-solid">
@@ -976,8 +1298,8 @@
 				</div>
 			</div>
 		</section>
-		<!-- END: Page content -->
-		<!-- BEGIN: Footer -->
+		{% comment %} END: Page content {% endcomment %}
+		{% comment %} BEGIN: Footer {% endcomment %}
 		<footer class="colors-g page-transition non-preloading">
 			<div class="container scroll-in-animation" data-animation="fadeInDown">
 				<div class="row">
@@ -1044,7 +1366,7 @@
 				© 2023 All Rights Reserved. <a href="#" class="open-overlay-window heading" data-overlay-window=".credits-overlay">Credits.</a>
 			</div>
 		</footer>
-		<!-- END: Footer -->
+		{% comment %} END: Footer {% endcomment %}
 		<script>
 		if (typeof(atob) == "undefined")
 		{
@@ -1113,6 +1435,24 @@
 		{
 			$('html').addClass('ie11');
 		}
+		</script>
+		<script src="{% static 'lib/howler.min.js' %}"></script>
+		<script>
+			function playSound() {
+				console.log("playSound fired!")
+				var sound = new Howl({
+					src: ["{% static 'audio/background-audio.mp3' %}"],
+					autoplay: true,
+					onload: function() {
+						console.log('Loaded!');
+					},
+					onplay: function() {
+						console.log('Played!');
+					}
+				});
+
+				sound.play();
+			}
 		</script>
 	</body>
 </html>

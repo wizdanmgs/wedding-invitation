@@ -1,2 +1,4 @@
-@import url("styles/themes/theme-lynda.min.css");
-.factory-flag{ visibility: hidden; }
+@import url("styles/themes/theme-lynda.css");
+.factory-flag {
+  visibility: hidden;
+}

@@ -614,16 +614,21 @@ a.colors-a:hover {
   background-color: #dbab83;
 }
 .colors-a .stroke-highlight {
-  text-shadow: -1px -1px 0 #dbab83, 1px -1px 0 #dbab83, -1px 1px 0 #dbab83, 1px 1px 0 #dbab83;
+  text-shadow: -1px -1px 0 #dbab83, 1px -1px 0 #dbab83, -1px 1px 0 #dbab83,
+    1px 1px 0 #dbab83;
 }
 .colors-a .stroke-heading {
-  text-shadow: -1px -1px 0 #333333, 1px -1px 0 #333333, -1px 1px 0 #333333, 1px 1px 0 #333333;
+  text-shadow: -1px -1px 0 #333333, 1px -1px 0 #333333, -1px 1px 0 #333333,
+    1px 1px 0 #333333;
 }
 .colors-a .stroke-foreground {
-  text-shadow: -1px -1px 0 #767676, 1px -1px 0 #767676, -1px 1px 0 #767676, 1px 1px 0 #767676;
+  text-shadow: -1px -1px 0 #767676, 1px -1px 0 #767676, -1px 1px 0 #767676,
+    1px 1px 0 #767676;
 }
 .colors-a .stroke-background {
-  text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.6), 1px -1px 0 rgba(255, 255, 255, 0.6), -1px 1px 0 rgba(255, 255, 255, 0.6), 1px 1px 0 rgba(255, 255, 255, 0.6);
+  text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.6),
+    1px -1px 0 rgba(255, 255, 255, 0.6), -1px 1px 0 rgba(255, 255, 255, 0.6),
+    1px 1px 0 rgba(255, 255, 255, 0.6);
 }
 .colors-a .label-border {
   border-color: rgba(219, 171, 131, 0.7);
@@ -1363,16 +1368,21 @@ a.colors-b:hover {
   background-color: #ccb08a;
 }
 .colors-b .stroke-highlight {
-  text-shadow: -1px -1px 0 #ccb08a, 1px -1px 0 #ccb08a, -1px 1px 0 #ccb08a, 1px 1px 0 #ccb08a;
+  text-shadow: -1px -1px 0 #ccb08a, 1px -1px 0 #ccb08a, -1px 1px 0 #ccb08a,
+    1px 1px 0 #ccb08a;
 }
 .colors-b .stroke-heading {
-  text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
+  text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff,
+    1px 1px 0 #ffffff;
 }
 .colors-b .stroke-foreground {
-  text-shadow: -1px -1px 0 #efefef, 1px -1px 0 #efefef, -1px 1px 0 #efefef, 1px 1px 0 #efefef;
+  text-shadow: -1px -1px 0 #efefef, 1px -1px 0 #efefef, -1px 1px 0 #efefef,
+    1px 1px 0 #efefef;
 }
 .colors-b .stroke-background {
-  text-shadow: -1px -1px 0 rgba(97, 94, 90, 0.82), 1px -1px 0 rgba(97, 94, 90, 0.82), -1px 1px 0 rgba(97, 94, 90, 0.82), 1px 1px 0 rgba(97, 94, 90, 0.82);
+  text-shadow: -1px -1px 0 rgba(97, 94, 90, 0.82),
+    1px -1px 0 rgba(97, 94, 90, 0.82), -1px 1px 0 rgba(97, 94, 90, 0.82),
+    1px 1px 0 rgba(97, 94, 90, 0.82);
 }
 .colors-b .label-border {
   border-color: rgba(204, 176, 138, 0.7);
@@ -2112,16 +2122,21 @@ a.colors-c:hover {
   background-color: #ccb08a;
 }
 .colors-c .stroke-highlight {
-  text-shadow: -1px -1px 0 #ccb08a, 1px -1px 0 #ccb08a, -1px 1px 0 #ccb08a, 1px 1px 0 #ccb08a;
+  text-shadow: -1px -1px 0 #ccb08a, 1px -1px 0 #ccb08a, -1px 1px 0 #ccb08a,
+    1px 1px 0 #ccb08a;
 }
 .colors-c .stroke-heading {
-  text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
+  text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff,
+    1px 1px 0 #ffffff;
 }
 .colors-c .stroke-foreground {
-  text-shadow: -1px -1px 0 #efefef, 1px -1px 0 #efefef, -1px 1px 0 #efefef, 1px 1px 0 #efefef;
+  text-shadow: -1px -1px 0 #efefef, 1px -1px 0 #efefef, -1px 1px 0 #efefef,
+    1px 1px 0 #efefef;
 }
 .colors-c .stroke-background {
-  text-shadow: -1px -1px 0 rgba(41, 36, 31, 0.82), 1px -1px 0 rgba(41, 36, 31, 0.82), -1px 1px 0 rgba(41, 36, 31, 0.82), 1px 1px 0 rgba(41, 36, 31, 0.82);
+  text-shadow: -1px -1px 0 rgba(41, 36, 31, 0.82),
+    1px -1px 0 rgba(41, 36, 31, 0.82), -1px 1px 0 rgba(41, 36, 31, 0.82),
+    1px 1px 0 rgba(41, 36, 31, 0.82);
 }
 .colors-c .label-border {
   border-color: rgba(204, 176, 138, 0.7);
@@ -2861,16 +2876,21 @@ a.colors-d:hover {
   background-color: #ccb08a;
 }
 .colors-d .stroke-highlight {
-  text-shadow: -1px -1px 0 #ccb08a, 1px -1px 0 #ccb08a, -1px 1px 0 #ccb08a, 1px 1px 0 #ccb08a;
+  text-shadow: -1px -1px 0 #ccb08a, 1px -1px 0 #ccb08a, -1px 1px 0 #ccb08a,
+    1px 1px 0 #ccb08a;
 }
 .colors-d .stroke-heading {
-  text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
+  text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff,
+    1px 1px 0 #ffffff;
 }
 .colors-d .stroke-foreground {
-  text-shadow: -1px -1px 0 #efefef, 1px -1px 0 #efefef, -1px 1px 0 #efefef, 1px 1px 0 #efefef;
+  text-shadow: -1px -1px 0 #efefef, 1px -1px 0 #efefef, -1px 1px 0 #efefef,
+    1px 1px 0 #efefef;
 }
 .colors-d .stroke-background {
-  text-shadow: -1px -1px 0 rgba(71, 61, 46, 0.82), 1px -1px 0 rgba(71, 61, 46, 0.82), -1px 1px 0 rgba(71, 61, 46, 0.82), 1px 1px 0 rgba(71, 61, 46, 0.82);
+  text-shadow: -1px -1px 0 rgba(71, 61, 46, 0.82),
+    1px -1px 0 rgba(71, 61, 46, 0.82), -1px 1px 0 rgba(71, 61, 46, 0.82),
+    1px 1px 0 rgba(71, 61, 46, 0.82);
 }
 .colors-d .label-border {
   border-color: rgba(204, 176, 138, 0.7);
@@ -3075,7 +3095,7 @@ footer.colors-d.border-top {
 }
 .colors-e .highlight,
 .colors-e.highlight {
-  color: #afbda1;
+  color: #9ba079;
 }
 .colors-e .background,
 .colors-e.background {
@@ -3610,16 +3630,21 @@ a.colors-e:hover {
   background-color: #afbda1;
 }
 .colors-e .stroke-highlight {
-  text-shadow: -1px -1px 0 #afbda1, 1px -1px 0 #afbda1, -1px 1px 0 #afbda1, 1px 1px 0 #afbda1;
+  text-shadow: -1px -1px 0 #afbda1, 1px -1px 0 #afbda1, -1px 1px 0 #afbda1,
+    1px 1px 0 #afbda1;
 }
 .colors-e .stroke-heading {
-  text-shadow: -1px -1px 0 #ccb08a, 1px -1px 0 #ccb08a, -1px 1px 0 #ccb08a, 1px 1px 0 #ccb08a;
+  text-shadow: -1px -1px 0 #ccb08a, 1px -1px 0 #ccb08a, -1px 1px 0 #ccb08a,
+    1px 1px 0 #ccb08a;
 }
 .colors-e .stroke-foreground {
-  text-shadow: -1px -1px 0 #dfdfdf, 1px -1px 0 #dfdfdf, -1px 1px 0 #dfdfdf, 1px 1px 0 #dfdfdf;
+  text-shadow: -1px -1px 0 #dfdfdf, 1px -1px 0 #dfdfdf, -1px 1px 0 #dfdfdf,
+    1px 1px 0 #dfdfdf;
 }
 .colors-e .stroke-background {
-  text-shadow: -1px -1px 0 rgba(20, 20, 20, 0.88), 1px -1px 0 rgba(20, 20, 20, 0.88), -1px 1px 0 rgba(20, 20, 20, 0.88), 1px 1px 0 rgba(20, 20, 20, 0.88);
+  text-shadow: -1px -1px 0 rgba(20, 20, 20, 0.88),
+    1px -1px 0 rgba(20, 20, 20, 0.88), -1px 1px 0 rgba(20, 20, 20, 0.88),
+    1px 1px 0 rgba(20, 20, 20, 0.88);
 }
 .colors-e .label-border {
   border-color: rgba(175, 189, 161, 0.7);
@@ -4359,16 +4384,21 @@ a.colors-f:hover {
   background-color: #ccb08a;
 }
 .colors-f .stroke-highlight {
-  text-shadow: -1px -1px 0 #ccb08a, 1px -1px 0 #ccb08a, -1px 1px 0 #ccb08a, 1px 1px 0 #ccb08a;
+  text-shadow: -1px -1px 0 #ccb08a, 1px -1px 0 #ccb08a, -1px 1px 0 #ccb08a,
+    1px 1px 0 #ccb08a;
 }
 .colors-f .stroke-heading {
-  text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
+  text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff,
+    1px 1px 0 #ffffff;
 }
 .colors-f .stroke-foreground {
-  text-shadow: -1px -1px 0 #efefef, 1px -1px 0 #efefef, -1px 1px 0 #efefef, 1px 1px 0 #efefef;
+  text-shadow: -1px -1px 0 #efefef, 1px -1px 0 #efefef, -1px 1px 0 #efefef,
+    1px 1px 0 #efefef;
 }
 .colors-f .stroke-background {
-  text-shadow: -1px -1px 0 rgba(27, 28, 36, 0.85), 1px -1px 0 rgba(27, 28, 36, 0.85), -1px 1px 0 rgba(27, 28, 36, 0.85), 1px 1px 0 rgba(27, 28, 36, 0.85);
+  text-shadow: -1px -1px 0 rgba(27, 28, 36, 0.85),
+    1px -1px 0 rgba(27, 28, 36, 0.85), -1px 1px 0 rgba(27, 28, 36, 0.85),
+    1px 1px 0 rgba(27, 28, 36, 0.85);
 }
 .colors-f .label-border {
   border-color: rgba(204, 176, 138, 0.7);
@@ -5108,16 +5138,20 @@ a.colors-g:hover {
   background-color: #ffffff;
 }
 .colors-g .stroke-highlight {
-  text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
+  text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff,
+    1px 1px 0 #ffffff;
 }
 .colors-g .stroke-heading {
-  text-shadow: -1px -1px 0 #ccb08a, 1px -1px 0 #ccb08a, -1px 1px 0 #ccb08a, 1px 1px 0 #ccb08a;
+  text-shadow: -1px -1px 0 #ccb08a, 1px -1px 0 #ccb08a, -1px 1px 0 #ccb08a,
+    1px 1px 0 #ccb08a;
 }
 .colors-g .stroke-foreground {
-  text-shadow: -1px -1px 0 #afafaf, 1px -1px 0 #afafaf, -1px 1px 0 #afafaf, 1px 1px 0 #afafaf;
+  text-shadow: -1px -1px 0 #afafaf, 1px -1px 0 #afafaf, -1px 1px 0 #afafaf,
+    1px 1px 0 #afafaf;
 }
 .colors-g .stroke-background {
-  text-shadow: -1px -1px 0 #101010, 1px -1px 0 #101010, -1px 1px 0 #101010, 1px 1px 0 #101010;
+  text-shadow: -1px -1px 0 #101010, 1px -1px 0 #101010, -1px 1px 0 #101010,
+    1px 1px 0 #101010;
 }
 .colors-g .label-border {
   border-color: rgba(255, 255, 255, 0.7);
@@ -5857,16 +5891,21 @@ a.colors-h:hover {
   background-color: #afbda1;
 }
 .colors-h .stroke-highlight {
-  text-shadow: -1px -1px 0 #afbda1, 1px -1px 0 #afbda1, -1px 1px 0 #afbda1, 1px 1px 0 #afbda1;
+  text-shadow: -1px -1px 0 #afbda1, 1px -1px 0 #afbda1, -1px 1px 0 #afbda1,
+    1px 1px 0 #afbda1;
 }
 .colors-h .stroke-heading {
-  text-shadow: -1px -1px 0 #ccb08a, 1px -1px 0 #ccb08a, -1px 1px 0 #ccb08a, 1px 1px 0 #ccb08a;
+  text-shadow: -1px -1px 0 #ccb08a, 1px -1px 0 #ccb08a, -1px 1px 0 #ccb08a,
+    1px 1px 0 #ccb08a;
 }
 .colors-h .stroke-foreground {
-  text-shadow: -1px -1px 0 #efefef, 1px -1px 0 #efefef, -1px 1px 0 #efefef, 1px 1px 0 #efefef;
+  text-shadow: -1px -1px 0 #efefef, 1px -1px 0 #efefef, -1px 1px 0 #efefef,
+    1px 1px 0 #efefef;
 }
 .colors-h .stroke-background {
-  text-shadow: -1px -1px 0 rgba(15, 14, 14, 0.85), 1px -1px 0 rgba(15, 14, 14, 0.85), -1px 1px 0 rgba(15, 14, 14, 0.85), 1px 1px 0 rgba(15, 14, 14, 0.85);
+  text-shadow: -1px -1px 0 rgba(15, 14, 14, 0.85),
+    1px -1px 0 rgba(15, 14, 14, 0.85), -1px 1px 0 rgba(15, 14, 14, 0.85),
+    1px 1px 0 rgba(15, 14, 14, 0.85);
 }
 .colors-h .label-border {
   border-color: rgba(175, 189, 161, 0.7);
@@ -6283,4 +6322,3 @@ pre::-webkit-scrollbar-thumb,
   scrollbar-shadow-color: #333333;
   scrollbar-darkshadow-color: #333333;
 }
-
