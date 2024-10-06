@@ -139,6 +139,28 @@
 				</div> {% endcomment %}
 			</div>
 		</div>
+		<div class="overlay-window gift-overlay colors-h background-75-h">
+			<div class="overlay-control background-90-g">
+				<a class="cross" href="#"></a>
+			</div>
+			<div class="overlay-view">
+				<div class="row">
+					<div class="row">
+						<div class="col-md-offset-4 col-md-4 col-md-offset-4">
+							<div class="text-center">
+								<div class="box border background-100-light">
+									<img src="{% static 'svg/jago-syariah.svg' %}" width="200rem">
+									<h3>503901849840</h3>
+									<p class="lead colors-a"><b>a/n Ajeng Rizki Novianti</b></p>
+									<button class="button background-70-d border-heading-d heading-d">Salin No. Rekening</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
 		{% comment %} <div class="overlay-window credits-overlay colors-g background-95-g">
 			<div class="overlay-control background-90-b">
 				<a class="cross" href="#"></a>
@@ -315,8 +337,8 @@
 						<h3>بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</h3>
 						<div class="row">
 							<div class="col-md-6 col-md-offset-3">
+								<h3>اَلسَّلاَمُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ</h3>
 								<p class="lead text-center">
-									Assalamu'alaikum Warahmatullaahi Wabarakaatuh <br>
 									Dengan Rahmat dan Kasih Sayang Allah SWT Yang Telah Mempertemukan Kami :
 								</p>
 							</div>
@@ -468,10 +490,10 @@
 				</div>
 			</div>
 			<div class="view" id="numbers">
-				<img alt class="bg" src="{% static 'images/journey/sma-1.jpg' %}" />
-				<img alt class="bg" src="{% static 'images/journey/sma-2.jpg' %}" />
-				<img alt class="bg" src="{% static 'images/journey/smp-1.jpg' %}" />
-				<img alt class="bg" src="{% static 'images/journey/smp-2.jpg' %}" />
+				<img alt class="bg" src="{% static 'images/journey/ring.jpg' %}" />
+				<img alt class="bg" src="{% static 'images/journey/ringless.jpg' %}" />
+				{% comment %} <img alt class="bg" src="{% static 'images/journey/smp-1.jpg' %}" />
+				<img alt class="bg" src="{% static 'images/journey/smp-2.jpg' %}" /> {% endcomment %}
 				<div class="content half-size colors-h">
 					<div class="container-fluid">
 						<h3>Our <span class="highlight">Journey</span></h3>
@@ -514,7 +536,7 @@
 				<div class="content no-bottom-padding colors-e background-solid">
 					<div class="container">
 						<h2>Moments</span></h2>
-						{% comment %} <p class="header-details"><span class="highlight">Some Recent</span> Projects</p> {% endcomment %}
+						<p class="header-details"><span class="highlight">Our precious</span> Memories</p>
 						{% comment %} <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p> {% endcomment %}
 					</div>
 					<div class="gallery colors-h background-solid" data-default-group="all" data-overlay=".gallery-overlay">
@@ -532,7 +554,7 @@
 								<div class="grid">
 									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["kecil"]'>
 										<a href="#" class="hover-overlay">
-											<img alt="Kecil Aa" src="{% static 'images/gallery/kecil-aa.jpg' %}" />
+											<img alt="Wizdan Bocil" src="{% static 'images/gallery/kecil-aa.jpg' %}" />
 											<div class="overlay background-90-a">
 												<div>
 													<p class="title heading-a">Wizdan Bocil</p>
@@ -544,7 +566,7 @@
 									</div>
 									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["kecil"]'>
 										<a href="#" class="hover-overlay">
-											<img alt="Kecil Riri" src="{% static 'images/gallery/kecil-riri.jpg' %}" />
+											<img alt="Ajeng Bocil" src="{% static 'images/gallery/kecil-riri.jpg' %}" />
 											<div class="overlay background-90-a">
 												<div>
 													<p class="title heading-a">Ajeng Bocil</p>
@@ -555,7 +577,7 @@
 									</div>
 									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["remaja"]'>
 										<a href="#" class="hover-overlay">
-											<img alt="SMP Riri" src="{% static 'images/gallery/smp-riri.jpg' %}" />
+											<img alt="Terlihat Kecewa" src="{% static 'images/gallery/smp-riri.jpg' %}" />
 											<div class="overlay background-90-a">
 												<div>
 													<p class="title heading-a">Terlihat Kecewa</p>
@@ -566,7 +588,7 @@
 									</div>
 									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["remaja"]'>
 										<a href="#" class="hover-overlay">
-											<img alt="SMP Aa" src="{% static 'images/gallery/smp-aa.jpg' %}" />
+											<img alt="Muka Ganteng" src="{% static 'images/gallery/smp-aa.jpg' %}" />
 											<div class="overlay background-90-a">
 												<div>
 													<p class="title heading-a">Muka Ganteng</p>
@@ -577,7 +599,7 @@
 									</div>
 									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["remaja"]'>
 										<a href="#" class="hover-overlay">
-											<img alt="RBS" src="{% static 'images/gallery/rbs.jpg' %}" />
+											<img alt="Di Ruang Sastra" src="{% static 'images/gallery/rbs.jpg' %}" />
 											<div class="overlay background-90-a">
 												<div>
 													<p class="title heading-a">Di Ruang Sastra</p>
@@ -593,6 +615,28 @@
 												<div>
 													<p class="title heading-a">2013, Gunung Padang</p>
 													<p class="text-center heading-a"><strong>Maen-maen, lihat alam.</strong></p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["remaja"]'>
+										<a href="#" class="hover-overlay">
+											<img alt="Si Tampan" src="{% static 'images/gallery/sma-aa.jpg' %}" />
+											<div class="overlay background-90-a">
+												<div>
+													<p class="title heading-a">Si Tampan</p>
+													<p class="text-center heading-a"><strong>Approved by Mamah.</strong></p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["remaja"]'>
+										<a href="#" class="hover-overlay">
+											<img alt="Si Imoet" src="{% static 'images/gallery/sma-riri.jpg' %}" />
+											<div class="overlay background-90-a">
+												<div>
+													<p class="title heading-a">Si Imoet</p>
+													<p class="text-center heading-a"><strong>Ngehalangin orang turun gapapa, kan imut.</strong></p>
 												</div>
 											</div>
 										</a>
@@ -659,17 +703,6 @@
 												<div>
 													<p class="title heading-a">2018 Okt 01, Dufan</p>
 													<p class="text-center heading-a"><strong>Pas tahu ada info diskon langsung ngejadwalin.</strong></p>
-												</div>
-											</div>
-										</a>
-									</div>
-									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["dewasa"]'>
-										<a href="#" class="hover-overlay">
-											<img alt="KONTRAS" src="{% static 'images/gallery/20181001-dufan-2.jpg' %}" />
-											<div class="overlay background-90-a">
-												<div>
-													<p class="title heading-a">KONTRAS</p>
-													<p class="text-center heading-a"><strong>Beda jauh banget ini warna kulit.</strong></p>
 												</div>
 											</div>
 										</a>
@@ -819,17 +852,6 @@
 									</div>
 									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["dewasa"]'>
 										<a href="#" class="hover-overlay">
-											<img alt="2023 Des 19, Cincin Lamaran" src="{% static 'images/gallery/20231209-cincin-lamaran.jpg' %}" />
-											<div class="overlay background-90-a">
-												<div>
-													<p class="title heading-a">2023 Des 19, Cincin Lamaran</p>
-													<p class="text-center heading-a"><strong>Nemu cincin couple yang cocok, tinggal nunggu jadi.</strong></p>
-												</div>
-											</div>
-										</a>
-									</div>
-									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["dewasa"]'>
-										<a href="#" class="hover-overlay">
 											<img alt="2023 Des 10, Nikahan Teman" src="{% static 'images/gallery/20231210-nikahan-teman.jpg' %}" />
 											<div class="overlay background-90-a">
 												<div>
@@ -857,17 +879,6 @@
 												<div>
 													<p class="title heading-a">2024 Apr 08, Qbig</p>
 													<p class="text-center heading-a"><strong>Main di tempat yang deket aja, udah kerja susah nyari waktu.</strong></p>
-												</div>
-											</div>
-										</a>
-									</div>
-									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["dewasa"]'>
-										<a href="#" class="hover-overlay">
-											<img alt="Sepatu (Gak Jadi)" src="{% static 'images/gallery/20240408-sepatu.jpg' %}" />
-											<div class="overlay background-90-a">
-												<div>
-													<p class="title heading-a">Sepatu (Gak Jadi)</p>
-													<p class="text-center heading-a"><strong>Niat mau beli pas balik sini udah habis, hiks.</strong></p>
 												</div>
 											</div>
 										</a>
@@ -905,10 +916,18 @@
 			<div class="view">
 				<div class="content colors-e background-solid">
 					<div class="container">
-						<h2>Team</h2>
-						<p class="header-details"><span class="highlight">Who </span>We Are</p>
-						<p class="lead">Our success depends on the <strong class="highlight">strength of our team.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud exercitation.</p>
-						<div class="row">
+						<div class="text-center">
+							<img src="{% static 'svg/pray.svg' %}" alt="">
+						</div>
+						<h3>
+							اَللَّهُمَّ إِنِّيْ أَسْأَلُكَ مِنْ خَيْرِهَا وَخَيْرِ مَا جَبَلْتَهَا عَلَيْهِ ، وَأَعُوْذَ بِكَ مِنْ شَرِّهَا وَشَرِّ مَا جَبَلْتَهَا عَلَيْهِ
+						</h3>
+						{% comment %} <p class="header-details"><span class="highlight">Who </span>We Are</p> {% endcomment %}
+						<p class="lead">
+							“Ya Allah, sesungguhnya aku mohon kepada-Mu kebaikan dirinya dan kebaikan yang Engkau tentukan atas dirinya. Dan aku berlindung kepada-Mu dari kejelekannya dan kejelekan yang Engkau tetapkan atas dirinya.” <br/>
+							(H.R. Abu Dawud No. 1845)
+						</p>
+						{% comment %} <div class="row">
 							<div class="col-md-3 col-sm-6  col-xs-6">
 								<div class="hover-overlay">
 									<img alt="Mike Johnson" src="{% static 'images/placeholders/380x573-1.jpg' %}" title="Mike Johnson" class="fluid-width">
@@ -1020,11 +1039,11 @@
 							<div class="col-md-6 col-md-offset-3">
 								<p class="text-center">Aliquam fermentum massa ac est sollicitudin, at ultricies ligula tristique. Cras finibus, nulla ac convallis feugiat, nisl nisl lobortis est, eget auctor velit magna vel nunc. Donec nec eros rhoncus.</p>
 							</div>
-						</div>
+						</div> {% endcomment %}
 					</div>
 				</div>
 			</div>
-			<div class="view" id="who-we-are">
+			{% comment %} <div class="view" id="who-we-are">
 				<div class="content pane">
 					<div class="container-fluid">
 						<div class="row">
@@ -1053,9 +1072,9 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> {% endcomment %}
 		</section>
-		<section id="services">
+		{% comment %} <section id="services">
 			<div class="view">
 				<div class="content colors-e background-solid">
 					<div class="container">
@@ -1147,9 +1166,9 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> {% endcomment %}
 
-		<section id="skills">
+		{% comment %} <section id="skills">
 			<div class="view">
 				<div class="content colors-e background-solid">
 					<div class="container">
@@ -1233,66 +1252,66 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> {% endcomment %}
 		<section id="contact">
 			<div class="view">
-				<img alt class="bg" src="{% static 'images/placeholders/1920x1200-2.jpg' %}" /><img alt class="bg" src="{% static 'images/placeholders/1920x1200-0.jpg' %}" /><img alt class="bg" src="{% static 'images/placeholders/1920x1200-1.jpg' %}" />
+				<img alt class="bg" src="{% static 'images/prewed/79.jpg' %}" />
+				<img alt class="bg" src="{% static 'images/prewed/76.jpg' %}" />
 				<div class="content full-size colors-h">
 					<div class="container">
-						<h2>Contact</h2>
-						<p class="header-details">Keep In Touch</p>
+						<h2>Best <span class="highlight">Wishes</span></h2>
+						<p class="header-details"><span class="highlight">Kirimkan </span> Ucapan dan Do'a Restu</p>
 						<div class="row">
-							<div class="col-md-6">
-								<div class="text-right scroll-in-animation" data-animation="fadeInLeft">
-									<p class="big-font uppercase">
-										Tel: <strong class="highlight">+7 (781) 503-1810</strong>
-									</p>
-									<p class="big-font uppercase">
-										500 Unicorn Park Dr, 21st Floor
-										<br/> Woburn, MA 01801, United States
-									</p>
-									<p class="big-font">
-										<b>
-									<a href="mailto:info@ouraddress.com">info@ouraddress.com</a><br/>
-									<a href="http://www.ouraddress.com">www.ouraddress.com</a>
-								</b>
-									</p>
-									<p class="big-font">
-										<a target="_blank" href="https://twitter.com/"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x heading"></i><i class="fa fa-twitter fa-stack-1x text-background"></i></span></a>
-										<a target="_blank" href="https://www.facebook.com/"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x heading"></i><i class="fa fa-facebook fa-stack-1x text-background"></i></span></a>
-										<a target="_blank" href="http://www.youtube.com/"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x heading"></i><i class="fa fa-youtube fa-stack-1x text-background"></i></span></a>
-									</p>
-								</div>
-							</div>
-							<div class="col-md-6">
+							<div class="col-md-6" style="padding-bottom: 1rem">
 								<div class="text-left scroll-in-animation" data-animation="fadeInRight">
 									<form class="ajax-form" data-message-class="colors-e background-95 border heading" action="contact.php" method="post" novalidate="novalidate">
 										<div class="row">
-											<div class="col-md-6 control-group">
-												<div class="alt-placeholder">Name</div>
-												<input type="text" name="your-name" value="" size="40" placeholder="Name" data-validation-required-message="Please fill the required field." required>
+											<div class="col-md-12 control-group">
+												<div class="alt-placeholder">Nama</div>
+												<input type="text" name="your-name" value="" size="40" placeholder="Nama" data-validation-required-message="Please fill the required field." required>
 												<div class="help-block"></div>
 											</div>
-											<div class="col-md-6 control-group">
+											{% comment %} <div class="col-md-6 control-group">
 												<div class="alt-placeholder">Email</div>
 												<input type="email" name="your-email" value="" size="40" placeholder="Email" data-validation-required-message="Please fill the required field." required>
 												<div class="help-block"></div>
-											</div>
+											</div> {% endcomment %}
 											<div class="col-md-12 control-group">
-												<div class="alt-placeholder">Message</div>
-												<textarea name="your-message" placeholder="Message" data-validation-required-message="Please fill the required field." required></textarea>
+												<div class="alt-placeholder">Pesan</div>
+												<textarea name="your-message" placeholder="Pesan" data-validation-required-message="Please fill the required field." required></textarea>
 												<div class="help-block"></div>
 											</div>
 											<div class="col-md-12 form-actions">
-												<input class="button" type="submit" value="Send">
+												<input class="button" type="submit" value="Kirim">
 											</div>
 										</div>
 									</form>
 								</div>
 							</div>
-						</div>
-						<div class="text-center">
-							<a class="map-open button background-lite-b border-heading-b heading-b" data-map-overlay=".map-overlay" href="#">Locate Us on Map</a>
+							<div class="col-md-6">
+								<div class="text-right scroll-in-animation" data-animation="fadeInLeft">
+									{% comment %} <p class="big-font uppercase">
+										Tel: <strong class="highlight">+7 (781) 503-1810</strong>
+									</p> {% endcomment %}
+									<p class="big-font">
+										Do'a Restu Anda merupakan karunia yang sangat berarti bagi kami. <br/>
+										Dan jika memberi adalah ungkapan tanda kasih, <br/>Anda dapat memberi hadiah secara cashless.
+									</p>
+									<a class="map-open button background-lite-b border-heading-b heading-b" data-map-overlay=".gift-overlay" href="#">Kirim Hadiah</a>
+									
+									{% comment %} <p class="big-font">
+										<b>
+											<a href="mailto:info@ouraddress.com">info@ouraddress.com</a><br/>
+											<a href="http://www.ouraddress.com">www.ouraddress.com</a>
+										</b>
+									</p>
+									<p class="big-font">
+										<a target="_blank" href="https://twitter.com/"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x heading"></i><i class="fa fa-twitter fa-stack-1x text-background"></i></span></a>
+										<a target="_blank" href="https://www.facebook.com/"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x heading"></i><i class="fa fa-facebook fa-stack-1x text-background"></i></span></a>
+										<a target="_blank" href="http://www.youtube.com/"><span class="fa-stack"><i class="fa fa-circle fa-stack-2x heading"></i><i class="fa fa-youtube fa-stack-1x text-background"></i></span></a>
+									</p> {% endcomment %}
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -1301,69 +1320,31 @@
 		{% comment %} END: Page content {% endcomment %}
 		{% comment %} BEGIN: Footer {% endcomment %}
 		<footer class="colors-g page-transition non-preloading">
-			<div class="container scroll-in-animation" data-animation="fadeInDown">
+			<div class="content colors-e background-solid">
+				<div class="container scroll-in-animation" data-animation="fadeInDown">
+					<h2>Thank <span class="highlight">You</span></h2>
+					<p class="lead">
+						Merupakan kehormatan serta kebahagiaan bagi kami sekeluarga apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu kepada kedua mempelai.<br/><br/>
+						Turut Berbagia, <br/>
+						<em>— Keluarga Besar Wizdan & Ajeng —</em>
+					</p>
+					<h3>وَالسَّلاَمُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ</h3>
+				</div>
+			</div>
+			{% comment %} <div class="container scroll-in-animation" data-animation="fadeInDown">
 				<div class="row">
-					<div class="col-md-3">
-						<h4>SKROLL<span class="highlight">EX</span></h4>
-						<div class="footer-description">
-							<p>Mauris metus tellus, lacinia nec efficitur quis, rhoncus et mi.</p>
-						</div>
-						<p class="social-links">
-							<a target="_blank" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
-							<a target="_blank" href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
-							<a target="_blank" href="http://www.youtube.com/"><i class="fa fa-youtube"></i></a>
-							<a target="_blank" href="https://vimeo.com/"><i class="fa fa-vimeo-square"></i></a>
-							<a target="_blank" href="https://www.pinterest.com/"><i class="fa fa-printerest"></i></a>
-							<a target="_blank" href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
-						</p>
-					</div>
-					<div class="col-md-3">
-						<h5>Additional Links</h5>
-						<ul class="simple">
-							<li><a href="help.html">Documentation</a></li>
-							<li><a href="blog.html">Blog</a></li>
-							<li><a href="#how-we-work">How We Work</a></li>
-							<li><a href="#who-we-are">Who We Are</a></li>
-							<li><a href="#numbers">Our Numbers</a></li>
-						</ul>
-					</div>
-					<div class="col-md-3">
-						<h5>Recent Posts</h5>
-						<ul class="simple">
-							<li><a href="blog-single-1.html">Post with Featured Image</a></li>
-							<li><a href="blog-single-2.html">And Post with Slider</a></li>
-							<li><a href="blog-single-3.html">Post with Vimeo Video</a></li>
-							<li><a href="blog-single-4.html">Another Post with Image</a></li>
-							<li><a href="blog.html">More...</a></li>
-						</ul>
-					</div>
-					<div class="col-md-3">
-						<h5>Photo Stream</h5>
-						<div class="photo">
-							<div class="col-xs-3 col-sm-2 col-md-4">
-								<a target="_blank" href="https://www.flickr.com/photos/we-are-envato/12333983853" title="Melbourne Meetup by Envato, on Flickr"><img class="fluid-width" src="{% static 'images/placeholders/150x150-1.jpg' %}" alt="Melbourne Meetup"></a>
-							</div>
-							<div class="col-xs-3 col-sm-2 col-md-4">
-								<a target="_blank" href="https://www.flickr.com/photos/we-are-envato/13090549273" title="Around the Envato Office - Highfive! by Envato, on Flickr"><img class="fluid-width" src="{% static 'images/placeholders/150x150-2.jpg' %}" alt="Around the Envato Office - Highfive!"></a>
-							</div>
-							<div class="col-xs-3 col-sm-2 col-md-4">
-								<a target="_blank" href="https://www.flickr.com/photos/we-are-envato/12333834195" title="Melbourne Meetup by Envato, on Flickr"><img class="fluid-width" src="{% static 'images/placeholders/150x150-1.jpg' %}" alt="Melbourne Meetup"></a>
-							</div>
-							<div class="col-xs-3 col-sm-2 col-md-4">
-								<a target="_blank" href="https://www.flickr.com/photos/we-are-envato/13090422515" title="Around the Envato Office - Becca by Envato, on Flickr"><img class="fluid-width" src="{% static 'images/placeholders/150x150-2.jpg' %}" alt="Around the Envato Office - Becca"></a>
-							</div>
-							<div class="col-xs-3 col-sm-2 col-md-4">
-								<a target="_blank" href="https://www.flickr.com/photos/we-are-envato/13090762874" title="Around the Envato Office - Ben &amp; Jane by Envato, on Flickr"><img class="fluid-width" src="{% static 'images/placeholders/150x150-1.jpg' %}" alt="Around the Envato Office - Ben &amp; Jane"></a>
-							</div>
-							<div class="col-xs-3 col-sm-2 col-md-4">
-								<a target="_blank" href="https://www.flickr.com/photos/we-are-envato/13090456565" title="Around the Envato Office - Selina by Envato, on Flickr"><img class="fluid-width" src="{% static 'images/placeholders/150x150-2.jpg' %}" alt="Around the Envato Office - Selina"></a>
-							</div>
+					<div class="col-md-12">
+						<div class="text-center">
+							<p class="lead">
+								Merupakan kehormatan serta kebahagiaan bagi kami sekeluarga apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu kepada kedua mempelai.<br/><br/>
+							Wassalamualaikum Warahmatullahi Wabarakatuh
+							</p>
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> {% endcomment %}
 			<div class="bottom text-center background-5-b">
-				© 2023 All Rights Reserved. <a href="#" class="open-overlay-window heading" data-overlay-window=".credits-overlay">Credits.</a>
+				© 2024 All Rights Reserved. <a href="https://resume.wizdan.my.id/" target="_blank" class="heading">Wizdan M. G. S.</a>
 			</div>
 		</footer>
 		{% comment %} END: Footer {% endcomment %}
