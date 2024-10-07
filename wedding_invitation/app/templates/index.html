@@ -17,6 +17,7 @@
 		<link rel="stylesheet" href="{% static 'bower_components/slick.js/slick/slick-theme.css' %}" />
 		<link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap-custom.min.css' %}" />
 		<link rel="stylesheet" href="{% static 'lib/linecons/style.css' %}" />
+		<link rel="stylesheet" href="{% static 'lib/jarallax/jarallax.min.css' %}" />
 		<link rel="stylesheet" href="{% static 'styles/style.css' %}" />
 		<link rel="stylesheet" href="{% static 'theme-custom.css' %}" />
 		<link rel="shortcut icon" href="{% static 'favicon.ico' %}" type="image/x-icon'' %}" />
@@ -262,7 +263,7 @@
 								</div>
 							</div>
 							<div class="col-md-3 counter background-35-h">
-								<div class="count row heading">Nikahan</div>
+								<div class="count row heading">Pernikahan</div>
 								<div>
 									Atas Rahmat Allah SWT, Insyaallah kami akan melaksanakan prosesi pernikahan pada tanggal 03 November 2024. Bismillahirrahmanirrahim, kami melangkah bersama.
 								</div>
@@ -715,16 +716,20 @@
 		{% comment %} END: Page content {% endcomment %}
 
 		{% comment %} BEGIN: Footer {% endcomment %}
-		<footer class="colors-g page-transition non-preloading">
-			<div class="content colors-e background-solid">
+		<footer class="page-transition non-preloading">
+			<div class="jarallax" data-jarallax data-video-src="mp4:{% static 'videos/bean.mp4' %}">
+				<div class="view">
+					<div class="content ull-size colors-h">
 				<div class="container scroll-in-animation" data-animation="fadeInDown">
 					<h2>Thank <span class="highlight">You</span></h2>
 					<p class="lead">
-						Merupakan kehormatan serta kebahagiaan bagi kami sekeluarga apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu kepada kedua mempelai.<br/><br/>
+								Merupakan kehormatan bagi kami sekeluarga apabila Anda berkenan hadir.<br/><br/>
 						Turut Berbagia, <br/>
 						<em>— Keluarga Besar Wizdan & Ajeng —</em>
 					</p>
 					<h3>وَالسَّلاَمُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ</h3>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="bottom text-center background-5-b">
@@ -801,9 +806,12 @@
 		{
 			$('html').addClass('ie11');
 		}
-		</script>
-		<script src="{% static 'lib/howler.min.js' %}"></script>
-		<script>
+
+		$('.jarallax').jarallax({
+			speed: 1,
+			videoVolume: 0,
+		});
+
 			function playSound() {
 				console.log("playSound fired!")
 				var sound = new Howl({
