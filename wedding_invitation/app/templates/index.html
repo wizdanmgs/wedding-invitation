@@ -471,7 +471,7 @@
 					</div>
 				</div>
 			</div>
-						<div class="view">
+			<div class="view">
 				<img alt class="bg" src="{% static 'images/prewed/79.jpg' %}" />
 				<img alt class="bg" src="{% static 'images/prewed/76.jpg' %}" />
 				<div class="content full-size colors-h">
@@ -513,6 +513,58 @@
 					</div>
 				</div>
 			</div>
+			<div class="view">
+				<div class="content colors-e background-solid">
+					<div class="container">
+						<h2>Messages</h2>
+						<p class="header-details"><span class="highlight">Pesan-pesan dari orang tercinta</span></p>
+						<div class="messages">
+							<div class="row">
+								<div class="col-12 top-line">
+									<h4>Mohammad Arif</h4>
+									<p>Congrats ya pernikahannya</p>
+								</div>
+								<div class="col-12 top-line">
+									<h4>Yayu Yeah</h4>
+									<p>Ya Allah Wizdan, dinanti hari H nya</p>
+								</div>
+								<div class="col-12 top-line">
+									<h4>Agus</h4>
+									<p>Dih, dah mau dewasa nih ya wkwkkw. Kalau bisa kateringnya banyakin oe mau undang juga nyak babeh.</p>
+								</div>
+								<div class="col-12 top-line">
+									<h4>Gina</h4>
+									<p>Semoga diberi kelancaran dan sehat selalu, amin.</p>
+								</div>
+								<div class="col-12 top-line">
+									<h4>Mohammad Arif</h4>
+									<p>Congrats ya pernikahannya</p>
+								</div>
+								<div class="col-12 top-line">
+									<h4>Yayu Yeah</h4>
+									<p>Ya Allah Wizdan, dinanti hari H nya</p>
+								</div>
+								<div class="col-12 top-line">
+									<h4>Agus</h4>
+									<p>Dih, dah mau dewasa nih ya wkwkkw</p>
+								</div>
+								<div class="col-12 top-line">
+									<h4>Gina</h4>
+									<p>Semoga diberi kelancaran dan sehat selalu, amin.</p>
+								</div>
+								<div class="col-12 top-line">
+									<h4>Mohammad Arif</h4>
+									<p>Congrats ya pernikahannya</p>
+								</div>
+								<div class="col-12 top-line">
+									<h4>Yayu Yeah</h4>
+									<p>Ya Allah Wizdan, dinanti hari H nya</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
 		{% comment %} END: Page content {% endcomment %}
 
@@ -521,14 +573,14 @@
 			<div class="jarallax" data-jarallax data-video-src="mp4:{% static 'videos/bean.mp4' %}">
 				<div class="view">
 					<div class="content ull-size colors-h">
-				<div class="container scroll-in-animation" data-animation="fadeInDown">
-					<h2>Thank <span class="highlight">You</span></h2>
-					<p class="lead">
+						<div class="container scroll-in-animation" data-animation="fadeInDown">
+							<h2>Thank <span class="highlight">You</span></h2>
+							<p class="lead">
 								Merupakan kehormatan bagi kami sekeluarga apabila Anda berkenan hadir.<br/><br/>
-						Turut Berbagia, <br/>
-						<em>— Keluarga Besar Wizdan & Ajeng —</em>
-					</p>
-					<h3>وَالسَّلاَمُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ</h3>
+								Turut Berbagia, <br/>
+								<em>— Keluarga Besar Wizdan & Ajeng —</em>
+							</p>
+							<h3>وَالسَّلاَمُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ</h3>
 						</div>
 					</div>
 				</div>
@@ -538,7 +590,7 @@
 			</div>
 		</footer>
 		{% comment %} END: Footer {% endcomment %}
-		 
+
 		<script>
 		if (typeof(atob) == "undefined")
 		{
@@ -616,21 +668,21 @@
 			videoVolume: 0,
 		});
 
-			function playSound() {
-				console.log("playSound fired!")
-				var sound = new Howl({
-					src: ["{% static 'audio/background-audio.mp3' %}"],
-					autoplay: true,
-					onload: function() {
-						console.log('Loaded!');
-					},
-					onplay: function() {
-						console.log('Played!');
-					}
-				});
+		function playSound() {
+			console.log("playSound fired!")
+			var sound = new Howl({
+				src: ["{% static 'audio/background-audio.mp3' %}"],
+				autoplay: true,
+				onload: function() {
+					console.log('Loaded!');
+				},
+				onplay: function() {
+					console.log('Played!');
+				}
+			});
 
-				sound.play();
-			}
+			sound.play();
+		}
 		</script>
 	</body>
 </html>
