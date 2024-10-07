@@ -4786,3 +4786,16 @@ html {
 [dir="rtl"] .slick-next {
   left: auto;
 }
+
+@media (min-width: 991px) {
+  .jarallax .jarallax-container video {
+    margin: -1100px 0px 0px !important;
+  }
+}
+
+.messages {
+  width: 100%;
+  height: 30rem;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
