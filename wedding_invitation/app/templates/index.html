@@ -672,7 +672,8 @@
 			console.log("playSound fired!")
 			var sound = new Howl({
 				src: ["{% static 'audio/background-audio.mp3' %}"],
-				autoplay: true,
+				html5: true,
+				{% comment %} autoplay: true, {% endcomment %}
 				onload: function() {
 					console.log('Loaded!');
 				},
