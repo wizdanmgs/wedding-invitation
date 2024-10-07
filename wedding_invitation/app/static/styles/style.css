@@ -29,7 +29,7 @@
 25. Examples / .example-page, .example, pre
 26. Hardware Optimizations / .force3d
 27. Letter Spacing
-28. Home Variants / .home-angie, .home-lynda, .home-lucy, .home-alice, .home-mary, .home-suzi
+28. Home Variants / .home-angie, .home-wedding, .home-lucy, .home-alice, .home-mary, .home-suzi
 29. Customize Panel / #customize-panel
 30. Demo Selection / .select-demo
 31. Colors
@@ -4087,7 +4087,7 @@ p {
   letter-spacing: 2px;
 }
 /*==================================================================
-28. Home Variants / .home-angie, .home-lynda, .home-lucy, .home-alice, .home-mary, .home-suzi
+28. Home Variants / .home-angie, .home-wedding, .home-lucy, .home-alice, .home-mary, .home-suzi
 ==================================================================*/
 .home-angie .full-size {
   padding-top: 80px;
@@ -4143,19 +4143,19 @@ p {
   letter-spacing: 1px;
   text-transform: uppercase;
 }
-.home-lynda .textillate,
+.home-wedding .textillate,
 .home-lucy .textillate {
   font-size: 35px;
   line-height: 35px;
 }
 @media (max-width: 991px) {
-  .home-lynda .textillate,
+  .home-wedding .textillate,
   .home-lucy .textillate {
     font-size: 24px;
     line-height: 24px;
   }
 }
-.home-lynda h1,
+.home-wedding h1,
 .home-lucy h1 {
   font-weight: 800;
   margin-top: 0px;
@@ -4164,14 +4164,14 @@ p {
   line-height: 86px;
 }
 @media (max-width: 991px) {
-  .home-lynda h1,
+  .home-wedding h1,
   .home-lucy h1 {
     font-size: 60px;
     line-height: 60px;
   }
 }
 @media (max-width: 767px) {
-  .home-lynda h1,
+  .home-wedding h1,
   .home-lucy h1 {
     font-size: 48px;
     line-height: 48px;

@@ -671,43 +671,8 @@
         b.exports = new (function () {
           var a = this;
           (this.options = {
-            angie: {
-              style: "theme-angie",
-              bgSync: ["**/*.txt", "**/*"],
-              videoSync: [],
-            },
-            lynda: {
-              style: "theme-lynda",
-              bgSync: ["**/*.txt", "**/*"],
-              videoSync: [],
-            },
-            alice: {
-              style: "theme-alice",
-              bgSync: ["**/*.txt", "**/*"],
-              videoSync: [],
-            },
-            lucy: {
-              style: "theme-lucy",
-              bgSync: ["**/*.txt", "**/*"],
-              videoSync: [],
-            },
-            mary: {
-              style: "theme-alice",
-              bgSync: ["**/*.txt", "**/*"],
-              videoSync: [],
-            },
-            suzi: {
-              style: "theme-suzi",
-              bgSync: ["**/*.txt", "**/*"],
-              videoSync: [],
-            },
-            viki: {
-              style: "theme-viki",
-              bgSync: ["**/*.txt", "**/*"],
-              videoSync: [],
-            },
-            luiza: {
-              style: "theme-luiza",
+            wedding: {
+              style: "theme-wedding",
               bgSync: ["**/*.txt", "**/*"],
               videoSync: [],
             },
