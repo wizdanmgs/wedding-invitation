@@ -4799,3 +4799,7 @@ html {
   overflow-x: hidden;
   overflow-y: scroll;
 }
+
+.messages-item {
+  margin-left: 1.2rem;
+}
