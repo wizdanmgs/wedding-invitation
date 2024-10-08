@@ -1,4 +1,14 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,700,500,600,300,200,100,800,900);
+@import url(
+  https://fonts.googleapis.com/css?family="Midland Luxury":400,
+  700,
+  500,
+  600,
+  300,
+  200,
+  100,
+  800,
+  900
+);
 body,
 html {
   width: 100%;
@@ -132,7 +142,7 @@ iframe {
 }
 body,
 html {
-  font-family: Raleway, Arial, Helvetica, sans-serif;
+  font-family: "Midland Luxury", Arial, Helvetica, sans-serif;
   font-weight: 400;
 }
 h1,
@@ -141,7 +151,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Raleway, Arial, Helvetica, sans-serif;
+  font-family: "Midland Luxury", Arial, Helvetica, sans-serif;
 }
 h1 {
   font-weight: 800;
@@ -230,7 +240,7 @@ textarea {
 }
 .heading-font,
 .normal-font {
-  font-family: Raleway, Arial, Helvetica, sans-serif;
+  font-family: "Midland Luxury", Arial, Helvetica, sans-serif;
 }
 .small-font {
   font-size: 11px;
@@ -270,7 +280,7 @@ textarea {
   margin: 0 24px;
   border: none;
   border-bottom: 1px solid;
-  font-family: Raleway, Arial, Helvetica, sans-serif;
+  font-family: "Midland Luxury", Arial, Helvetica, sans-serif;
   font-weight: 800;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
@@ -2950,7 +2960,7 @@ input.button {
 .subtitle,
 .title,
 input.button {
-  font-family: Raleway, Arial, Helvetica, sans-serif;
+  font-family: "Midland Luxury", Arial, Helvetica, sans-serif;
 }
 .separator {
   height: 20px;

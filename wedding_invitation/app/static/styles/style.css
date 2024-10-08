@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,700,500,600,300,200,100,800,900);
+/* @import url(https://fonts.googleapis.com/css?family="Midland Luxury":400,700,500,600,300,200,100,800,900); */
 /*------------------------------------------------------------------
 [TABLE OF CONTENTS]
 
@@ -63,6 +63,11 @@ Disable Uppercase:		.non-uppercase
 /*==================================================================
 1. HTML Elements / body, p, h1 - h6, input, textarea, ul, a, ...
 ==================================================================*/
+@font-face {
+  font-family: "Midland Luxury";
+  src: url(../fonts/MidlandluxuryRegular.otf);
+}
+
 body,
 html {
   width: 100%;
@@ -204,7 +209,7 @@ iframe {
 }
 body,
 html {
-  font-family: Raleway, Arial, Helvetica, sans-serif;
+  font-family: "Midland Luxury", Arial, Helvetica, sans-serif;
   font-weight: 400;
 }
 h1,
@@ -213,7 +218,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Raleway, Arial, Helvetica, sans-serif;
+  font-family: "Midland Luxury", Arial, Helvetica, sans-serif;
 }
 h1 {
   font-weight: 800;
@@ -309,10 +314,10 @@ textarea {
   font-weight: 900 !important;
 }
 .normal-font {
-  font-family: Raleway, Arial, Helvetica, sans-serif;
+  font-family: "Midland Luxury", Arial, Helvetica, sans-serif;
 }
 .heading-font {
-  font-family: Raleway, Arial, Helvetica, sans-serif;
+  font-family: "Midland Luxury", Arial, Helvetica, sans-serif;
 }
 .small-font {
   font-size: 11px;
@@ -355,7 +360,7 @@ textarea {
   margin: 0 24px;
   border: none;
   border-bottom: 1px solid;
-  font-family: Raleway, Arial, Helvetica, sans-serif;
+  font-family: "Midland Luxury", Arial, Helvetica, sans-serif;
   font-weight: 800;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
@@ -3182,7 +3187,7 @@ input.button {
 .button,
 .btn,
 input.button {
-  font-family: Raleway, Arial, Helvetica, sans-serif;
+  font-family: "Midland Luxury", Arial, Helvetica, sans-serif;
 }
 .separator {
   height: 20px;
@@ -4146,7 +4151,8 @@ p {
 .home-wedding .textillate,
 .home-lucy .textillate {
   font-size: 35px;
-  line-height: 35px;
+  line-height: 60px;
+  padding-bottom: 20px;
 }
 @media (max-width: 991px) {
   .home-wedding .textillate,
@@ -4161,7 +4167,7 @@ p {
   margin-top: 0px;
   margin-bottom: 11px;
   font-size: 86px;
-  line-height: 86px;
+  line-height: 140px;
 }
 @media (max-width: 991px) {
   .home-wedding h1,
@@ -4233,7 +4239,8 @@ p {
 .home-mary .textillate,
 .home-suzi .textillate {
   font-size: 35px;
-  line-height: 35px;
+  line-height: 60px;
+  padding-bottom: 20px;
 }
 @media (max-width: 991px) {
   .home-alice .textillate,
