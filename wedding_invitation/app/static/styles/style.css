@@ -65,7 +65,64 @@ Disable Uppercase:		.non-uppercase
 ==================================================================*/
 @font-face {
   font-family: "Midland Luxury";
+  font-weight: 400;
   src: url(../fonts/MidlandluxuryRegular.otf);
+}
+@font-face {
+  font-family: "Midland Luxury";
+  font-weight: bold;
+  src: url(../fonts/MidlandluxuryBold.otf);
+}
+@font-face {
+  font-family: "Midland Luxury";
+  font-weight: 400;
+  font-style: italic;
+  src: url(../fonts/MidlandluxuryItalicRegular.otf);
+}
+@font-face {
+  font-family: "Midland Luxury";
+  font-weight: bolder;
+  font-style: italic;
+  src: url(../fonts/MidlandluxuryItalicBold.otf);
+}
+@font-face {
+  font-family: "White Angelica";
+  src: url(../fonts/WhiteAngelica.ttf);
+}
+@font-face {
+  font-family: "Lateef";
+  font-weight: 100;
+  src: url(../fonts/Lateef-ExtraLight.ttf);
+}
+@font-face {
+  font-family: "Lateef";
+  font-weight: 200;
+  src: url(../fonts/Lateef-Light.ttf);
+}
+@font-face {
+  font-family: "Lateef";
+  font-weight: 400;
+  src: url(../fonts/Lateef-Regular.ttf);
+}
+@font-face {
+  font-family: "Lateef";
+  font-weight: 500;
+  src: url(../fonts/Lateef-Medium.ttf);
+}
+@font-face {
+  font-family: "Lateef";
+  font-weight: 600;
+  src: url(../fonts/Lateef-SemiBold.ttf);
+}
+@font-face {
+  font-family: "Lateef";
+  font-weight: 700;
+  src: url(../fonts/Lateef-Bold.ttf);
+}
+@font-face {
+  font-family: "Lateef";
+  font-weight: 800;
+  src: url(../fonts/Lateef-ExtraBold.ttf);
 }
 
 body,
@@ -78,7 +135,7 @@ html {
   line-height: 22px;
 }
 p {
-  font-size: 13px;
+  font-size: 9px;
   line-height: 22px;
   margin-bottom: 11px;
 }
@@ -103,7 +160,7 @@ h3,
 h4,
 h5,
 h6 {
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 h1,
 h2,
@@ -146,7 +203,7 @@ h4 {
 }
 @media (max-width: 991px) {
   h4 {
-    font-size: 15px;
+    font-size: 13px;
     line-height: 18px;
   }
 }
@@ -161,12 +218,12 @@ h5 {
   }
 }
 h6 {
-  font-size: 15px;
+  font-size: 10px;
   line-height: 18px;
 }
 @media (max-width: 991px) {
   h6 {
-    font-size: 13px;
+    font-size: 10px;
     line-height: 16px;
   }
 }
@@ -3124,6 +3181,25 @@ input.button {
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
 }
+.position-bottom {
+  position: absolute;
+  top: -50%;
+  transform: translateY(50%);
+  -webkit-transform: translateY(50%);
+  -moz-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  -o-transform: translateY(50%);
+}
+.position-bottom-center {
+  position: absolute;
+  left: -50%;
+  top: -50%;
+  transform: translate(50%, 50%);
+  -webkit-transform: translate(50%, 50%);
+  -moz-transform: translate(50%, 50%);
+  -ms-transform: translate(50%, 50%);
+  -o-transform: translate(50%, 50%);
+}
 .uppercase {
   text-transform: uppercase;
 }
@@ -4150,15 +4226,16 @@ p {
 }
 .home-wedding .textillate,
 .home-lucy .textillate {
-  font-size: 35px;
+  font-size: 17px;
   line-height: 60px;
   padding-bottom: 20px;
 }
 @media (max-width: 991px) {
   .home-wedding .textillate,
   .home-lucy .textillate {
-    font-size: 24px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 50px;
+    padding-bottom: 20px;
   }
 }
 .home-wedding h1,
@@ -4173,14 +4250,14 @@ p {
   .home-wedding h1,
   .home-lucy h1 {
     font-size: 60px;
-    line-height: 60px;
+    line-height: 120px;
   }
 }
 @media (max-width: 767px) {
   .home-wedding h1,
   .home-lucy h1 {
-    font-size: 48px;
-    line-height: 48px;
+    font-size: 60px;
+    line-height: 70px;
   }
 }
 .home-alice .full-size,
@@ -4794,19 +4871,62 @@ html {
   left: auto;
 }
 
+/*==================================================================
+32. Custome
+==================================================================*/
 @media (min-width: 991px) {
   .jarallax .jarallax-container video {
     margin: -1100px 0px 0px !important;
   }
 }
-
 .messages {
   width: 100%;
   height: 30rem;
   overflow-x: hidden;
   overflow-y: scroll;
 }
-
 .messages-item {
   margin-left: 1.2rem;
+}
+.container,
+.container-fluid {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.text-fancy {
+  font-family: "White Angelica", Helvetica, sans-serif;
+  font-weight: bolder;
+}
+.text-arabic {
+  font-family: "Lateef", Helvetica, sans-serif;
+}
+.text-arabic-small {
+  font-size: 20px;
+}
+.text-small {
+  font-size: 7px;
+}
+.text-smaller {
+  font-size: 6px;
+}
+.img-padding {
+  padding: 10px;
+}
+.p-0 {
+  padding: 0px !important;
+}
+.pb-1 {
+  padding-bottom: 1rem !important;
+}
+.pb-2 {
+  padding-bottom: 2rem !important;
+}
+.pb-3 {
+  padding-bottom: 3rem !important;
+}
+.pb-4 {
+  padding-bottom: 4rem !important;
+}
+.pb-5 {
+  padding-bottom: 5rem !important;
 }
