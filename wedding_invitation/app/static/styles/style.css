@@ -311,6 +311,7 @@ textarea {
   padding: 10px;
   font-weight: 700;
   border: 1px solid;
+  font-size: 9px;
 }
 input.button {
   font-weight: 400;
@@ -3113,7 +3114,7 @@ html.mobile .vimeo-bg {
 a.button,
 input.button {
   padding: 13px 24px;
-  font-size: 13px;
+  font-size: 9px;
 }
 .line {
   padding-top: 10px;
