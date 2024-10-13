@@ -596,11 +596,6 @@
 						message: $("textarea[name=message]").val(),
 						csrfmiddlewaretoken: csrfmiddlewaretoken
 					},
-					beforeSend: function(xhr, settings) {
-						if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
-							xhr.setRequestHeader("X-CSRFToken", csrfmiddlewaretoken);
-						}
-					},
 					success: function (res) {
 						$('#message-form').trigger("reset");
 						$("#message-list").append(`<div class="col-12 top-line messages-item">
