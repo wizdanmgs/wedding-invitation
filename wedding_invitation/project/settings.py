@@ -134,5 +134,5 @@ MEDIA_ROOT = BASE_DIR / "mediafiles"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-CSRF_TRUSTED_ORIGINS = os.environ.get("DJANGO_ALLOWED_HOSTS").split(" ")
-CORS_ALLOWED_ORIGINS = os.environ.get("DJANGO_ALLOWED_HOSTS").split(" ")
+CSRF_TRUSTED_ORIGINS = os.environ.get("DJANGO_TRUSTED_ORIGINS").split(" ")
+CORS_ALLOWED_ORIGINS = os.environ.get("DJANGO_TRUSTED_ORIGINS").split(" ")
