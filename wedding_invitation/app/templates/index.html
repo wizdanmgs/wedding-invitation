@@ -147,7 +147,7 @@
 									<h1 class="heading text-left text-scribe">Our<br/>Wedding</h1>
 									<div class="box border background-10-b">
 										<h6 class="text-white"><strong>Kepada Yth.</strong></h6>
-										<h4><b>Keluarga Besar Cipetir</b></h4>
+										<h4><b>{{ to }}</b></h4>
 										<h6 class="text-white"><strong>Di Tempat</strong></h6>
 									</div>
 									<div class="big-separator"></div>
@@ -438,11 +438,14 @@
 							<h2 class="heading text-scribe pb-2">Messages</h2>
 							<div class="messages">
 								<div class="row">
-									<div class="col-12 top-line messages-item">
-										<h3 class="text-left text-scribe text-white">Mohammad Arif</h3>
-										<p>Congrats ya pernikahannya</p>
-									</div>
-									<div class="col-12 top-line messages-item">
+									{% for m in messages %}
+										<div class="col-12 top-line messages-item">
+											<h3 class="text-left text-scribe text-white">{{ m.name }}</h3>
+											<p>{{ m.message }}</p>
+										</div>
+									{% endfor %}
+									
+									{% comment %} <div class="col-12 top-line messages-item">
 										<h3 class="text-left text-scribe text-white">Yayu Yeah</h3>
 										<p>Ya Allah Wizdan, dinanti hari H nya</p>
 									</div>
@@ -477,7 +480,7 @@
 									<div class="col-12 top-line messages-item">
 										<h3 class="text-left text-scribe text-white">Yayu Yeah</h3>
 										<p>Ya Allah Wizdan, dinanti hari H nya</p>
-									</div>
+									</div> {% endcomment %}
 								</div>
 							</div>
 						</div>
