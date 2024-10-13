@@ -13,6 +13,8 @@ services:
       - ./.env.prod
     depends_on:
       - db
+    networks:
+      - reverse-proxy
   db:
     image: postgres:17
     volumes:
@@ -21,6 +23,8 @@ services:
       - "5432:5432"
     env_file:
       - ./.env_db.prod
+    networks:
+      - reverse-proxy
   nginx:
     build: ./nginx
     volumes:
@@ -30,8 +34,14 @@ services:
       - 10001:80
     depends_on:
       - web
+    networks:
+      - reverse-proxy
 
 volumes:
   postgres_data_prod:
   static_volume_prod:
   media_volume_prod:
+
+networks:
+  reverse-proxy:
+    external: true
