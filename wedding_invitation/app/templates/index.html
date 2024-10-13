@@ -68,6 +68,7 @@
 			$(function() {
 				{% comment %} $("#invitation-content").css("visibility", "hidden"); {% endcomment %}
 				disableScroll();
+				$("#bank-number-copied").hide();
 			})
 		</script>
 
@@ -121,7 +122,8 @@
 									<img src="{% static 'images/icon/jago-syariah.svg' %}" width="200rem">
 									<h3>503901849840</h3>
 									<p class="lead colors-a"><b>a/n Ajeng Rizki Novianti</b></p>
-									<button class="button background-70-d border-heading-d heading-d">Salin No. Rekening</button>
+									<button id="bank-number" class="button background-70-d border-heading-d heading-d" data-clipboard-text="503901849840">Salin No. Rekening</button>
+									<p id="bank-number-copied" class="text-center text-smaller heading colors-a"><b>Tersalin!</b></p>
 								</div>
 							</div>
 						</div>
@@ -509,6 +511,7 @@
 		<script src="{% static 'lib/jarallax/jarallax.min.js' %}"></script>
 		<script src="{% static 'lib/jarallax/jarallax-video.min.js' %}"></script>
 		<script src="{% static 'lib/howler.min.js' %}"></script>
+		<script src="{% static 'lib/clipboard.min.jsm.js' %}"></script>
 		<script>
 		(function()
 		{
@@ -536,6 +539,21 @@
 			{
 				$('html').addClass('flat-animation');
 			}
+
+			$('#bank-number').tooltip({
+				trigger: 'click',
+				placement: 'bottom'
+			});
+
+			// Clipboard
+			var clipboard = new ClipboardJS('#bank-number');
+			clipboard.on('success', function(e) {
+				var btn = $(e.trigger);
+				$("#bank-number-copied").fadeIn(500)
+				setTimeout(function() {
+					$("#bank-number-copied").fadeOut(500)
+				}, 1000);
+			});
 
 			/* JARALLAX */
 			$(".jarallax").jarallax({
