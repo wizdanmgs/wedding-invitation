@@ -7,8 +7,8 @@ services:
     volumes:
       - static_volume_prod:/home/app/web/staticfiles
       - media_volume_prod:/home/app/web/mediafiles
-    ports:
-      - 8000:8000
+    expose:
+      - 8000
     env_file:
       - ./.env.prod
     depends_on:
