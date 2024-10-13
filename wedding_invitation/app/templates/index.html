@@ -63,9 +63,11 @@
 		/>
 
 		<script src="{% static 'bower_components/jquery/jquery.min.js' %}"></script>
+		<script src="{% static 'scripts/scroll.js' %}"></script>
 		<script>
 			$(function() {
 				$("#invitation-content").css("visibility", "hidden");
+				disableScroll();
 			})
 		</script>
 
@@ -548,6 +550,7 @@
 
 			$("#open-invitation").click(function() {
 				sound.play();
+				enableScroll();
 				$("#invitation-preview").fadeOut(1000);
 				$("#invitation-content").css("visibility", "visible");
 				$("#invitation-content").fadeIn(1000);
