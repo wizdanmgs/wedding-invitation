@@ -547,6 +547,7 @@
 				src: ["{% static 'audio/background-audio.mp3' %}"],
 				html5: true,
 			});
+			var csrfmiddlewaretoken = $("input[name=csrfmiddlewaretoken]").val()
 
 			$("#open-invitation").click(function() {
 				sound.play();
@@ -574,7 +575,12 @@
 					data: {
 						name: $("input[name=name]").val(),
 						message: $("textarea[name=message]").val(),
-						csrfmiddlewaretoken: $("input[name=csrfmiddlewaretoken]").val()
+						csrfmiddlewaretoken: csrfmiddlewaretoken
+					},
+					beforeSend: function(xhr, settings) {
+						if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+							xhr.setRequestHeader("X-CSRFToken", csrfmiddlewaretoken);
+						}
 					},
 					success: function (res) {
 						$('#message-form').trigger("reset");
