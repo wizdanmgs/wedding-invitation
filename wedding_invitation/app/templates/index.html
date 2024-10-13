@@ -62,6 +62,13 @@
 		content="Minggu, 03 November 2024."
 		/>
 
+		<script src="{% static 'bower_components/jquery/jquery.min.js' %}"></script>
+		<script>
+			$(function() {
+				$("#invitation-content").css("visibility", "hidden");
+			})
+		</script>
+
 		<link rel="stylesheet" href="{% static 'bower_components/fontawesome/css/font-awesome.min.css' %}" />
 		<link rel="stylesheet" href="{% static 'bower_components/animate.css/animate.min.css' %}" />
 		<link rel="stylesheet" href="{% static 'bower_components/minicolors/jquery.minicolors.css' %}" />
@@ -123,384 +130,387 @@
 		</div>
 		
 		{% comment %} BEGIN: Page content {% endcomment %}
-		<section id="home">
-			<div class="view">
-				<img alt class="bg" src="{% static 'images/prewed/header-1.jpg' %}" /><img alt class="bg" src="{% static 'images/prewed/header-2.jpg' %}" /><img alt class="bg" src="{% static 'images/prewed/header-3.jpg' %}" />
-				<div class="content home-wedding full-size colors-e background-55">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-6">
-								
-								<div class="textillate" data-textillate-options="{loop:true, in:{effect:'flipInY', reverse:false}, out:{effect:'flipOutY', reverse:false}}">
-									<ul class="texts">
-										<li>We Are Inviting You To</li>
-									</ul>
-								</div>
-								<h1 class="heading text-left text-scribe">Our<br/>Wedding</h1>
-								<div class="box border background-10-b">
-									<h6 class="text-white"><strong>Kepada Yth.</strong></h6>
-									<h4><b>Keluarga Besar Cipetir</b></h4>
-									<h6 class="text-white"><strong>Di Tempat</strong></h6>
-								</div>
-								<div class="big-separator"></div>
-								<p><a href="#" id="open-invitation" class="button background-70-d text-white border fluid">Buka Undangan</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="profile">
-			<div class="view">
-				<div class="content colors-e background-solid">
-					<div class="container">
-						<div class="banner-cell">
-							<img alt src="{% static 'images/logo.png' %}" width="100rem"/>
-						</div>
-						<h3 class="text-arabic pb-2">وَمِنْ اٰيٰتِهٖٓ اَنْ خَلَقَ لَكُمْ مِّنْ اَنْفُسِكُمْ اَزْوَاجًا لِّتَسْكُنُوْٓا اِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَّوَدَّةً وَّرَحْمَةً ۗاِنَّ فِيْ ذٰلِكَ لَاٰيٰتٍ لِّقَوْمٍ يَّتَفَكَّرُوْنَ</h3>
-						<p class="text-center">
-							"Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang. Sungguh, pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir."
-							<br>
-							(QS Ar-Rum: 21)
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="view">
-				<img alt class="bg" src="{% static 'images/prewed/bg-profile.jpg' %}" />
-				<div class="content colors-h p-0">
-					<div class="container-fluid">
-						<div class="row pb-5">
-							<div class="col-md-6 col-md-offset-3">
-								<h3 class="text-arabic pb-2">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ <br/>اَلسَّلاَمُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ</h3>
-								<p class="text-center">
-									Dengan Rahmat dan Kasih Sayang <br/>
-									Allah SWT Yang Telah Mempertemukan Kami :
-								</p>
-							</div>
-						</div>
-						<div class="row flex pb-2">
-							<div class="col-xs-6">
-								<div class="hover-overlay">
-									<img alt="Wizdan" src="{% static 'images/prewed/groom.jpg' %}" title="Wizdan" class="fluid-width img-padding">
-									<div class="overlay background-90-b">
-										<div>
-											<p class="text-center text-uppercase heading-b">
-												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-											</p>
-											<div class="separator-small"></div>
-											<p class="text-center">
-												<a target="_blank" href="https://www.facebook.com/"><i class="fa fa-facebook heading-b"></i></a>
-												<a target="_blank" href="http://www.youtube.com/"><i class="fa fa-youtube heading-b"></i></a>
-												<a target="_blank" href="https://github.com/"><i class="fa fa-github heading-b"></i></a>
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-xs-6 px-0">
-								<div class="caption">
-									<h2 class="heading text-right text-scribe text-white pr-1">The Groom</h2>
-									<div class="text-right text-bottom pr-2">
-										<h6>Wizdan</h6>
-										<p>Mohammad Gibran Shodri, S.Tr.Kom.</p>
-										<p class="text-white text-smaller">
-											Putra pertama dari<br/>
-											Bpk Mohammad Ihsan Sodri, S.Pd<br/>
-											dan Ibu Ai Ratnasasi, S.Pd.<br/>
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row flex pb-2">
-							<div class="col-xs-6 px-0">
-								<div class="caption">
-									<h2 class="heading text-left text-scribe text-white pl-1">The Bride</h2>
-									<div class="text-left text-bottom pl-2">
-										<h6>Ajeng</h6>
-										<p>Rizki Novianti, S.Ds.</p>
-										<p class="text-white text-smaller">
-											Putri ketiga dari<br/>
-											Bpk Uce Sopandi<br/>
-											dan Neneh Supinah
-										</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-xs-6">
-								<div class="hover-overlay">
-									<img alt="Riri" src="{% static 'images/prewed/bride.jpg' %}" title="Wizdan" class="fluid-width img-padding">
-									<div class="overlay background-90-b">
-										<div>
-											<p class="text-center text-uppercase heading-b">
-												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-											</p>
-											<div class="separator-small"></div>
-											<p class="text-center">
-												<a target="_blank" href="https://www.facebook.com/"><i class="fa fa-facebook heading-b"></i></a>
-												<a target="_blank" href="http://www.youtube.com/"><i class="fa fa-youtube heading-b"></i></a>
-												<a target="_blank" href="https://github.com/"><i class="fa fa-github heading-b"></i></a>
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			{% comment %} <div class="view">
-				<img alt class="bg" src="{% static 'images/prewed/183.jpg' %}" />
-				<div class="content colors-h p-0">
-					<div class="container">
-					</div>
-				</div>
-			</div> {% endcomment %}
-		</section>
-		<section id="event">
-			<div class="view">
-				<div class="content colors-e background-solid">
-					<div class="container">
-						<h2>03 November<span class="highlight"> 2024</span></h2>
-						<p class="header-details"><span class="highlight">Hari Minggu, </span>Villa Pesona Cianjur</p>
-						<div class="process">
-							<div class="row process-row">
-								<div class="col-md-6 process-step">
-									<div class="process-box"><i class="li_diamond heading"></i></div>
-									<p class="title">Akad</p>
-									<p class="text-center">09.00 - 11.00</p>
-								</div>
-								<div class="col-md-6 process-step">
-									<div class="process-box"><i class="li_food heading"></i></div>
-									<p class="title">Resepsi</p>
-									<p class="text-center">11.00 - 14.00</p>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="text-center">
-								<a class="map-open button background-lite-b border-heading-b heading-b" data-map-overlay=".map-overlay" href="#">Lihat lokasi</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="view" id="numbers">
-				<img alt class="bg" src="{% static 'images/prewed/bg-journey.jpg' %}" />
-				<div class="content half-size colors-h">
-					<div class="container text-center">
-						<h2 class="heading text-scribe pb-2">Our Journey</h2>
-						<div class="row ">
-							<div class="col-md-3 pb-2">
-								<h3 class="row heading text-scribe text-white">Pertemuan</h3>
-								<p>
-									Awal bertemu saat kelas 2 SMP tahun 2011. Kami menempuh sekolah yang sama dan selalu berpapasan pada saat perkumpulan organisasi sastra.
-								</p>
-							</div>
-							<div class="col-md-3 pb-2">
-								<h3 class="row heading text-scribe text-white">Pendekatan</h3>
-								<p>
-									Mulai kelas 2 SMA tahun 2012, kami semakin dekat. Kami masuk jurusan yang berbeda: IPA & IPS, berada di gedung yang berbeda, hingga kuliah dan kerja pun di kota yang berbeda. Namun, kami tetap bersama.
-								</p>
-							</div>
-							<div class="col-md-3 pb-2">
-								<h3 class="count row heading text-scribe text-white">Pelamaran</h3>
-								<p>
-									Bertahun-tahun bersama, akhirnya kami memutuskan untuk melangkah ke jenjang berikutnya. Alhamdulillah, kami melaksanakan prosesi lamaran tepat di tahun baru Islam 1446 H.
-								</p>
-							</div>
-							<div class="col-md-3 pb-2">
-								<h3 class="count row heading text-scribe text-white">Pernikahan</h3>
-								<p>
-									Atas Rahmat Allah SWT, Insyaallah kami akan melaksanakan prosesi pernikahan pada tanggal 03 November 2024. Bismillahirrahmanirrahim, kami melangkah bersama.
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="moments">
-			<div class="view">
-				<div class="content no-bottom-padding colors-e background-solid">
-					<div class="container">
-						<h2 class="heading text-scribe pb-2">Our Precious Memories</h2>
-					</div>
-					<div class="gallery colors-h background-solid" data-default-group="all" data-overlay=".gallery-overlay">
-						<div class="container-fluid">
-							<div class="row">
-								<div class="grid">
-									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["prewed"]'>
-										<a href="#" class="hover-overlay">
-											<img alt="Wizdan Bocil" src="{% static 'images/prewed/42.jpg' %}" />
-										</a>
-									</div>
-									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["prewed"]'>
-										<a href="#" class="hover-overlay">
-											<img alt="Wizdan Bocil" src="{% static 'images/prewed/63.jpg' %}" />
-										</a>
-									</div>
-									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["prewed"]'>
-										<a href="#" class="hover-overlay">
-											<img alt="Wizdan Bocil" src="{% static 'images/prewed/220.jpg' %}" />
-										</a>
-									</div>
-									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["prewed"]'>
-										<a href="#" class="hover-overlay">
-											<img alt="Wizdan Bocil" src="{% static 'images/prewed/137.jpg' %}" />
-										</a>
-									</div>
-									<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["prewed"]'>
-										<a href="#" class="hover-overlay">
-											<img alt="Wizdan Bocil" src="{% static 'images/prewed/183.jpg' %}" />
-										</a>
-									</div>
-									
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="comments">
-			<div class="view">
-				<div class="content colors-e background-solid">
-					<div class="container">
-						<div class="text-center">
-							<img src="{% static 'svg/pray.svg' %}" alt="">
-						</div>
-						<h3>
-							اَللَّهُمَّ إِنِّيْ أَسْأَلُكَ مِنْ خَيْرِهَا وَخَيْرِ مَا جَبَلْتَهَا عَلَيْهِ ، وَأَعُوْذَ بِكَ مِنْ شَرِّهَا وَشَرِّ مَا جَبَلْتَهَا عَلَيْهِ
-						</h3>
-						<p class="lead">
-							“Ya Allah, sesungguhnya aku mohon kepada-Mu kebaikan dirinya dan kebaikan yang Engkau tentukan atas dirinya. Dan aku berlindung kepada-Mu dari kejelekannya dan kejelekan yang Engkau tetapkan atas dirinya.” <br/>
-							(H.R. Abu Dawud No. 1845)
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="view">
-				<img alt class="bg" src="{% static 'images/prewed/79.jpg' %}" />
-				<img alt class="bg" src="{% static 'images/prewed/76.jpg' %}" />
-				<div class="content full-size colors-h">
-					<div class="container">
-						<h2>Best <span class="highlight">Wishes</span></h2>
-						<p class="header-details"><span class="highlight">Kirimkan </span> Ucapan dan Do'a Restu</p>
-						<div class="row">
-							<div class="col-md-6" style="padding-bottom: 1rem">
-								<div class="text-left scroll-in-animation" data-animation="fadeInRight">
-									<form class="ajax-form" data-message-class="colors-e background-95 border heading" action="contact.php" method="post" novalidate="novalidate">
-										<div class="row">
-											<div class="col-md-12 control-group">
-												<div class="alt-placeholder">Nama</div>
-												<input type="text" name="your-name" value="" size="40" placeholder="Nama" data-validation-required-message="Please fill the required field." required>
-												<div class="help-block"></div>
-											</div>
-											<div class="col-md-12 control-group">
-												<div class="alt-placeholder">Pesan</div>
-												<textarea name="your-message" placeholder="Pesan" data-validation-required-message="Please fill the required field." required></textarea>
-												<div class="help-block"></div>
-											</div>
-											<div class="col-md-12 form-actions">
-												<input class="button" type="submit" value="Kirim">
-											</div>
-										</div>
-									</form>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="text-right scroll-in-animation" data-animation="fadeInLeft">
-									<p class="big-font">
-										Do'a Restu Anda merupakan karunia yang sangat berarti bagi kami. <br/>
-										Dan jika memberi adalah ungkapan tanda kasih, <br/>Anda dapat memberi hadiah secara cashless.
-									</p>
-									<a class="map-open button background-lite-b border-heading-b heading-b" data-map-overlay=".gift-overlay" href="#">Kirim Hadiah</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="view">
-				<div class="content colors-e background-solid">
-					<div class="container">
-						<h2>Messages</h2>
-						<p class="header-details"><span class="highlight">Pesan-pesan dari orang tercinta</span></p>
-						<div class="messages">
-							<div class="row">
-								<div class="col-12 top-line messages-item">
-									<h4>Mohammad Arif</h4>
-									<p>Congrats ya pernikahannya</p>
-								</div>
-								<div class="col-12 top-line messages-item">
-									<h4>Yayu Yeah</h4>
-									<p>Ya Allah Wizdan, dinanti hari H nya</p>
-								</div>
-								<div class="col-12 top-line messages-item">
-									<h4>Agus</h4>
-									<p>Dih, dah mau dewasa nih ya wkwkkw. Kalau bisa kateringnya banyakin oe mau undang juga nyak babeh.</p>
-								</div>
-								<div class="col-12 top-line messages-item">
-									<h4>Gina</h4>
-									<p>Semoga diberi kelancaran dan sehat selalu, amin.</p>
-								</div>
-								<div class="col-12 top-line messages-item">
-									<h4>Mohammad Arif</h4>
-									<p>Congrats ya pernikahannya</p>
-								</div>
-								<div class="col-12 top-line messages-item">
-									<h4>Yayu Yeah</h4>
-									<p>Ya Allah Wizdan, dinanti hari H nya</p>
-								</div>
-								<div class="col-12 top-line messages-item">
-									<h4>Agus</h4>
-									<p>Dih, dah mau dewasa nih ya wkwkkw</p>
-								</div>
-								<div class="col-12 top-line messages-item">
-									<h4>Gina</h4>
-									<p>Semoga diberi kelancaran dan sehat selalu, amin.</p>
-								</div>
-								<div class="col-12 top-line messages-item">
-									<h4>Mohammad Arif</h4>
-									<p>Congrats ya pernikahannya</p>
-								</div>
-								<div class="col-12 top-line messages-item">
-									<h4>Yayu Yeah</h4>
-									<p>Ya Allah Wizdan, dinanti hari H nya</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		{% comment %} END: Page content {% endcomment %}
-
-		{% comment %} BEGIN: Footer {% endcomment %}
-		<footer class="page-transition non-preloading">
-			<img id="disc" class="disc rotation" src="{% static 'svg/disc.svg' %}" alt="">
-			<div class="jarallax" data-jarallax data-video-src="mp4:{% static 'videos/bean.mp4' %}">
+		<div id="invitation-preview">
+			<section id="home">
 				<div class="view">
-					<div class="content ull-size colors-h">
-						<div class="container scroll-in-animation" data-animation="fadeInDown">
-							<h2>Thank <span class="highlight">You</span></h2>
-							<p class="lead">
-								Merupakan kehormatan bagi kami sekeluarga apabila Anda berkenan hadir.<br/><br/>
-								Turut Berbagia, <br/>
-								<em>— Keluarga Besar Wizdan & Ajeng —</em>
-							</p>
-							<h3 class="text-arabic">وَالسَّلاَمُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ</h3>
+					<img alt class="bg" src="{% static 'images/prewed/header-1.jpg' %}" /><img alt class="bg" src="{% static 'images/prewed/header-2.jpg' %}" /><img alt class="bg" src="{% static 'images/prewed/header-3.jpg' %}" />
+					<div class="content home-wedding full-size colors-e background-55">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-6">
+									
+									<div class="textillate" data-textillate-options="{loop:true, in:{effect:'flipInY', reverse:false}, out:{effect:'flipOutY', reverse:false}}">
+										<ul class="texts">
+											<li>We Are Inviting You To</li>
+										</ul>
+									</div>
+									<h1 class="heading text-left text-scribe">Our<br/>Wedding</h1>
+									<div class="box border background-10-b">
+										<h6 class="text-white"><strong>Kepada Yth.</strong></h6>
+										<h4><b>Keluarga Besar Cipetir</b></h4>
+										<h6 class="text-white"><strong>Di Tempat</strong></h6>
+									</div>
+									<div class="big-separator"></div>
+									<p><a href="#" id="open-invitation" class="button background-70-d text-white border fluid">Buka Undangan</a></p>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="bottom text-center background-5-b">
-				© 2024 All Rights Reserved. <a href="https://resume.wizdan.my.id/" target="_blank" class="heading">Wizdan M. G. S.</a>
-			</div>
-		</footer>
-		{% comment %} END: Footer {% endcomment %}
+			</section>
+		</div>
+
+		<div id="invitation-content">
+			<section id="profile">
+				<div class="view">
+					<div class="content colors-e background-solid">
+						<div class="container">
+							<div class="banner-cell">
+								<img alt src="{% static 'images/logo.png' %}" width="100rem"/>
+							</div>
+							<h3 class="text-arabic pb-2">وَمِنْ اٰيٰتِهٖٓ اَنْ خَلَقَ لَكُمْ مِّنْ اَنْفُسِكُمْ اَزْوَاجًا لِّتَسْكُنُوْٓا اِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَّوَدَّةً وَّرَحْمَةً ۗاِنَّ فِيْ ذٰلِكَ لَاٰيٰتٍ لِّقَوْمٍ يَّتَفَكَّرُوْنَ</h3>
+							<p class="text-center">
+								"Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang. Sungguh, pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir."
+								<br>
+								(QS Ar-Rum: 21)
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="view">
+					<img alt class="bg" src="{% static 'images/prewed/bg-profile.jpg' %}" />
+					<div class="content colors-h p-0">
+						<div class="container-fluid">
+							<div class="row pb-5">
+								<div class="col-md-6 col-md-offset-3">
+									<h3 class="text-arabic pb-2">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ <br/>اَلسَّلاَمُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ</h3>
+									<p class="text-center">
+										Dengan Rahmat dan Kasih Sayang <br/>
+										Allah SWT Yang Telah Mempertemukan Kami :
+									</p>
+								</div>
+							</div>
+							<div class="row flex pb-2">
+								<div class="col-xs-6">
+									<div class="hover-overlay">
+										<img alt="Wizdan" src="{% static 'images/prewed/groom.jpg' %}" title="Wizdan" class="fluid-width img-padding">
+										<div class="overlay background-90-b">
+											<div>
+												<p class="text-center text-uppercase heading-b">
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+												</p>
+												<div class="separator-small"></div>
+												<p class="text-center">
+													<a target="_blank" href="https://www.facebook.com/"><i class="fa fa-facebook heading-b"></i></a>
+													<a target="_blank" href="http://www.youtube.com/"><i class="fa fa-youtube heading-b"></i></a>
+													<a target="_blank" href="https://github.com/"><i class="fa fa-github heading-b"></i></a>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-6 px-0">
+									<div class="caption">
+										<h2 class="heading text-right text-scribe text-white pr-1">The Groom</h2>
+										<div class="text-right text-bottom pr-2">
+											<h6>Wizdan</h6>
+											<p>Mohammad Gibran Shodri, S.Tr.Kom.</p>
+											<p class="text-white text-smaller">
+												Putra pertama dari<br/>
+												Bpk Mohammad Ihsan Sodri, S.Pd<br/>
+												dan Ibu Ai Ratnasasi, S.Pd.<br/>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row flex pb-2">
+								<div class="col-xs-6 px-0">
+									<div class="caption">
+										<h2 class="heading text-left text-scribe text-white pl-1">The Bride</h2>
+										<div class="text-left text-bottom pl-2">
+											<h6>Ajeng</h6>
+											<p>Rizki Novianti, S.Ds.</p>
+											<p class="text-white text-smaller">
+												Putri ketiga dari<br/>
+												Bpk Uce Sopandi<br/>
+												dan Neneh Supinah
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-6">
+									<div class="hover-overlay">
+										<img alt="Riri" src="{% static 'images/prewed/bride.jpg' %}" title="Wizdan" class="fluid-width img-padding">
+										<div class="overlay background-90-b">
+											<div>
+												<p class="text-center text-uppercase heading-b">
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+												</p>
+												<div class="separator-small"></div>
+												<p class="text-center">
+													<a target="_blank" href="https://www.facebook.com/"><i class="fa fa-facebook heading-b"></i></a>
+													<a target="_blank" href="http://www.youtube.com/"><i class="fa fa-youtube heading-b"></i></a>
+													<a target="_blank" href="https://github.com/"><i class="fa fa-github heading-b"></i></a>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				{% comment %} <div class="view">
+					<img alt class="bg" src="{% static 'images/prewed/183.jpg' %}" />
+					<div class="content colors-h p-0">
+						<div class="container">
+						</div>
+					</div>
+				</div> {% endcomment %}
+			</section>
+			<section id="event">
+				<div class="view">
+					<div class="content colors-e background-solid">
+						<div class="container">
+							<h2>03 November<span class="highlight"> 2024</span></h2>
+							<p class="header-details"><span class="highlight">Hari Minggu, </span>Villa Pesona Cianjur</p>
+							<div class="process">
+								<div class="row process-row">
+									<div class="col-md-6 process-step">
+										<div class="process-box"><i class="li_diamond heading"></i></div>
+										<p class="title">Akad</p>
+										<p class="text-center">09.00 - 11.00</p>
+									</div>
+									<div class="col-md-6 process-step">
+										<div class="process-box"><i class="li_food heading"></i></div>
+										<p class="title">Resepsi</p>
+										<p class="text-center">11.00 - 14.00</p>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="text-center">
+									<a class="map-open button background-lite-b border-heading-b heading-b" data-map-overlay=".map-overlay" href="#">Lihat lokasi</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="view" id="numbers">
+					<img alt class="bg" src="{% static 'images/prewed/bg-journey.jpg' %}" />
+					<div class="content half-size colors-h">
+						<div class="container text-center">
+							<h2 class="heading text-scribe pb-2">Our Journey</h2>
+							<div class="row ">
+								<div class="col-md-3 pb-2">
+									<h3 class="row heading text-scribe text-white">Pertemuan</h3>
+									<p>
+										Awal bertemu saat kelas 2 SMP tahun 2011. Kami menempuh sekolah yang sama dan selalu berpapasan pada saat perkumpulan organisasi sastra.
+									</p>
+								</div>
+								<div class="col-md-3 pb-2">
+									<h3 class="row heading text-scribe text-white">Pendekatan</h3>
+									<p>
+										Mulai kelas 2 SMA tahun 2012, kami semakin dekat. Kami masuk jurusan yang berbeda: IPA & IPS, berada di gedung yang berbeda, hingga kuliah dan kerja pun di kota yang berbeda. Namun, kami tetap bersama.
+									</p>
+								</div>
+								<div class="col-md-3 pb-2">
+									<h3 class="count row heading text-scribe text-white">Pelamaran</h3>
+									<p>
+										Bertahun-tahun bersama, akhirnya kami memutuskan untuk melangkah ke jenjang berikutnya. Alhamdulillah, kami melaksanakan prosesi lamaran tepat di tahun baru Islam 1446 H.
+									</p>
+								</div>
+								<div class="col-md-3 pb-2">
+									<h3 class="count row heading text-scribe text-white">Pernikahan</h3>
+									<p>
+										Atas Rahmat Allah SWT, Insyaallah kami akan melaksanakan prosesi pernikahan pada tanggal 03 November 2024. Bismillahirrahmanirrahim, kami melangkah bersama.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="moments">
+				<div class="view">
+					<div class="content no-bottom-padding colors-e background-solid">
+						<div class="container">
+							<h2 class="heading text-scribe pb-2">Our Gallery</h2>
+						</div>
+						<div class="gallery colors-h background-solid" data-default-group="all" data-overlay=".gallery-overlay">
+							<div class="container-fluid">
+								<div class="row">
+									<div class="grid">
+										<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["prewed"]'>
+											<a href="#" class="hover-overlay">
+												<img alt="Wizdan Bocil" src="{% static 'images/prewed/42.jpg' %}" />
+											</a>
+										</div>
+										<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["prewed"]'>
+											<a href="#" class="hover-overlay">
+												<img alt="Wizdan Bocil" src="{% static 'images/prewed/63.jpg' %}" />
+											</a>
+										</div>
+										<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["prewed"]'>
+											<a href="#" class="hover-overlay">
+												<img alt="Wizdan Bocil" src="{% static 'images/prewed/220.jpg' %}" />
+											</a>
+										</div>
+										<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["prewed"]'>
+											<a href="#" class="hover-overlay">
+												<img alt="Wizdan Bocil" src="{% static 'images/prewed/137.jpg' %}" />
+											</a>
+										</div>
+										<div class="item col-md-3 col-sm-4 col-xs-6" data-groups='["prewed"]'>
+											<a href="#" class="hover-overlay">
+												<img alt="Wizdan Bocil" src="{% static 'images/prewed/183.jpg' %}" />
+											</a>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="comments">
+				<div class="view">
+					<div class="content colors-e background-solid">
+						<div class="container">
+							<h3 class="text-arabic">
+								اَللَّهُمَّ إِنِّيْ أَسْأَلُكَ مِنْ خَيْرِهَا وَخَيْرِ مَا جَبَلْتَهَا عَلَيْهِ ، وَأَعُوْذَ بِكَ مِنْ شَرِّهَا وَشَرِّ مَا جَبَلْتَهَا عَلَيْهِ
+							</h3>
+							<p class="text-center">
+								“Ya Allah, sesungguhnya aku mohon kepada-Mu kebaikan dirinya dan kebaikan yang Engkau tentukan atas dirinya. Dan aku berlindung kepada-Mu dari kejelekannya dan kejelekan yang Engkau tetapkan atas dirinya.” <br/>
+								(H.R. Abu Dawud No. 1845)
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="view">
+					<img alt class="bg" src="{% static 'images/prewed/79.jpg' %}" />
+					<img alt class="bg" src="{% static 'images/prewed/76.jpg' %}" />
+					<div class="content full-size colors-h">
+						<div class="container">
+							<h2 class="heading text-scribe pb-2">Best Wishes</h2>
+							<p class="header-details"><span class="highlight">Kirimkan </span> Ucapan dan Do'a Restu</p>
+							<div class="row">
+								<div class="col-md-6" style="padding-bottom: 1rem">
+									<div class="text-left scroll-in-animation" data-animation="fadeInRight">
+										<form class="ajax-form" data-message-class="colors-e background-95 border heading" action="contact.php" method="post" novalidate="novalidate">
+											<div class="row">
+												<div class="col-md-12 control-group">
+													<div class="alt-placeholder">Nama</div>
+													<input type="text" name="your-name" value="" size="40" placeholder="Nama" data-validation-required-message="Please fill the required field." required>
+													<div class="help-block"></div>
+												</div>
+												<div class="col-md-12 control-group">
+													<div class="alt-placeholder">Pesan</div>
+													<textarea name="your-message" placeholder="Pesan" data-validation-required-message="Please fill the required field." required></textarea>
+													<div class="help-block"></div>
+												</div>
+												<div class="col-md-12 form-actions">
+													<input class="button" type="submit" value="Kirim">
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="text-right scroll-in-animation" data-animation="fadeInLeft">
+										<p class="big-font">
+											Do'a Restu Anda merupakan karunia yang sangat berarti bagi kami. <br/>
+											Dan jika memberi adalah ungkapan tanda kasih, <br/>Anda dapat memberi hadiah secara cashless.
+										</p>
+										<a class="map-open button background-lite-b border-heading-b heading-b" data-map-overlay=".gift-overlay" href="#">Kirim Hadiah</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="view">
+					<div class="content colors-e background-solid">
+						<div class="container">
+							<h2>Messages</h2>
+							<p class="header-details"><span class="highlight">Pesan-pesan dari orang tercinta</span></p>
+							<div class="messages">
+								<div class="row">
+									<div class="col-12 top-line messages-item">
+										<h4>Mohammad Arif</h4>
+										<p>Congrats ya pernikahannya</p>
+									</div>
+									<div class="col-12 top-line messages-item">
+										<h4>Yayu Yeah</h4>
+										<p>Ya Allah Wizdan, dinanti hari H nya</p>
+									</div>
+									<div class="col-12 top-line messages-item">
+										<h4>Agus</h4>
+										<p>Dih, dah mau dewasa nih ya wkwkkw. Kalau bisa kateringnya banyakin oe mau undang juga nyak babeh.</p>
+									</div>
+									<div class="col-12 top-line messages-item">
+										<h4>Gina</h4>
+										<p>Semoga diberi kelancaran dan sehat selalu, amin.</p>
+									</div>
+									<div class="col-12 top-line messages-item">
+										<h4>Mohammad Arif</h4>
+										<p>Congrats ya pernikahannya</p>
+									</div>
+									<div class="col-12 top-line messages-item">
+										<h4>Yayu Yeah</h4>
+										<p>Ya Allah Wizdan, dinanti hari H nya</p>
+									</div>
+									<div class="col-12 top-line messages-item">
+										<h4>Agus</h4>
+										<p>Dih, dah mau dewasa nih ya wkwkkw</p>
+									</div>
+									<div class="col-12 top-line messages-item">
+										<h4>Gina</h4>
+										<p>Semoga diberi kelancaran dan sehat selalu, amin.</p>
+									</div>
+									<div class="col-12 top-line messages-item">
+										<h4>Mohammad Arif</h4>
+										<p>Congrats ya pernikahannya</p>
+									</div>
+									<div class="col-12 top-line messages-item">
+										<h4>Yayu Yeah</h4>
+										<p>Ya Allah Wizdan, dinanti hari H nya</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			{% comment %} END: Page content {% endcomment %}
+
+			{% comment %} BEGIN: Footer {% endcomment %}
+			<footer class="page-transition non-preloading">
+				<img id="disc" class="disc rotation" src="{% static 'svg/disc.svg' %}" alt="">
+				<div class="jarallax" data-jarallax data-video-src="mp4:{% static 'videos/bean.mp4' %}">
+					<div class="view">
+						<div class="content ull-size colors-h">
+							<div class="container scroll-in-animation" data-animation="fadeInDown">
+								<h2>Thank <span class="highlight">You</span></h2>
+								<p class="lead">
+									Merupakan kehormatan bagi kami sekeluarga apabila Anda berkenan hadir.<br/><br/>
+									Turut Berbagia, <br/>
+									<em>— Keluarga Besar Wizdan & Ajeng —</em>
+								</p>
+								<h3 class="text-arabic">وَالسَّلاَمُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bottom text-center background-5-b">
+					© 2024 All Rights Reserved. <a href="https://resume.wizdan.my.id/" target="_blank" class="heading">Wizdan M. G. S.</a>
+				</div>
+			</footer>
+			{% comment %} END: Footer {% endcomment %}
+
+		</div>
 
 		<script>
 		if (typeof(atob) == "undefined")
@@ -513,7 +523,6 @@
 		}
 		</script>
 		<script src="{% static 'bower_components/less.js/less.min.js' %}"></script>
-		<script src="{% static 'bower_components/jquery/jquery.min.js' %}"></script>
 		<script src="{% static 'lib/tween/tween.min.js' %}"></script>
 		<script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
 		<script src="{% static 'lib/modernizr-edited.js' %}"></script>
@@ -530,16 +539,9 @@
 		<script src="{% static 'lib/jarallax/jarallax.min.js' %}"></script>
 		<script src="{% static 'lib/jarallax/jarallax-video.min.js' %}"></script>
 		<script src="{% static 'lib/howler.min.js' %}"></script>
-		<script src="{% static 'scripts/scroll.js' %}"></script>
 		<script>
 		(function()
 		{
-			/* INITIAL */
-			$('#link-home').click();
-			$("#disc").hide();
-			disableScroll();
-			
-
 			var disableMobileAnimations = false;
 			var isWin = navigator.appVersion.indexOf("Win") !== -1;
 			if (isWin) $('html').addClass('win');
@@ -586,13 +588,8 @@
 			$("#open-invitation").click(function() {
 				console.log("openInvitation fired!")
 				sound.play();
-				enableScroll();
-				$("#link-profile").click();
-				setTimeout(function() {
-					$("#home").hide();
-					$("#disc").fadeIn(500);
-					document.getElementById("profile").scrollIntoView();
-				}, 2000)
+				$("#invitation-preview").fadeOut(1000);
+				$("#invitation-content").css("visibility", "visible").fadeIn(1000);
 			});
 
 			$("#disc").click(function() {
