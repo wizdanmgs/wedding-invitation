@@ -30,8 +30,8 @@ services:
     volumes:
       - static_volume_prod:/home/app/web/staticfiles
       - media_volume_prod:/home/app/web/mediafiles
-    ports:
-      - 10001:80
+    expose:
+      - 80
     depends_on:
       - web
     networks:
