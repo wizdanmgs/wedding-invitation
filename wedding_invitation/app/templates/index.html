@@ -276,16 +276,13 @@
 					<div class="content colors-e background-solid">
 						<div class="container">
 							<h2>03 November<span class="highlight"> 2024</span></h2>
-							<p class="header-details"><span class="highlight">Hari Minggu, </span>Villa Pesona Cianjur</p>
 							<div class="process">
 								<div class="row process-row">
 									<div class="col-md-6 process-step">
-										<div class="process-box"><i class="li_diamond heading"></i></div>
 										<p class="title">Akad</p>
 										<p class="text-center">09.00 - 11.00</p>
 									</div>
 									<div class="col-md-6 process-step">
-										<div class="process-box"><i class="li_food heading"></i></div>
 										<p class="title">Resepsi</p>
 										<p class="text-center">11.00 - 14.00</p>
 									</div>
@@ -584,7 +581,6 @@
 					},
 					success: function (res) {
 						$('#message-form').trigger("reset");
-						console.log(res)
 						$("#message-list").append(`<div class="col-12 top-line messages-item">
 							<h3 class="text-left text-scribe text-white">${res.name}</h3>
 							<p>${res.message}</p>
