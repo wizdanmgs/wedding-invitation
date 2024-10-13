@@ -275,14 +275,16 @@
 				<div class="view">
 					<div class="content colors-e background-solid">
 						<div class="container">
-							<h2>03 November<span class="highlight"> 2024</span></h2>
+							<h2 class="pb-2">03 November<span class="highlight"> 2024</span></h2>
 							<div class="process">
 								<div class="row process-row">
 									<div class="col-md-6 process-step">
+										{% comment %} <div class="process-box"><img alt src="{% static 'images/icon/rings.png' %}" /></div> {% endcomment %}
 										<p class="title">Akad</p>
 										<p class="text-center">09.00 - 11.00</p>
 									</div>
 									<div class="col-md-6 process-step">
+										{% comment %} <div class="process-box"><img alt src="{% static 'images/icon/drink.png' %}" /></div> {% endcomment %}
 										<p class="title">Resepsi</p>
 										<p class="text-center">11.00 - 14.00</p>
 									</div>
@@ -425,7 +427,9 @@
 											Do'a Restu Anda merupakan karunia yang sangat berarti bagi kami. <br/>
 											Dan jika memberi adalah ungkapan tanda kasih, <br/>Anda dapat memberi hadiah secara cashless.
 										</p>
-										<a class="map-open button background-lite-b border-heading-b heading-b" data-map-overlay=".gift-overlay" href="#">Kirim Hadiah</a>
+										<a class="map-open" data-map-overlay=".gift-overlay" href="#">
+											<img alt src="{% static 'images/icon/gift.png' %}" width="70rem"/>
+										</a>
 									</div>
 								</div>
 							</div>
