@@ -398,7 +398,8 @@
 							<div class="row">
 								<div class="col-md-6" style="padding-bottom: 1rem">
 									<div class="text-left">
-										<form class="ajax-form" data-message-class="colors-e background-95 border heading" action="contact.php" method="post" novalidate="novalidate">
+										<form class="ajax-form" id="message-form" data-message-class="colors-e background-95 border heading" method="post" novalidate="novalidate">
+											{% csrf_token %}
 											<div class="row">
 												<div class="col-md-12 control-group">
 													<div class="alt-placeholder">Nama</div>
@@ -437,50 +438,13 @@
 						<div class="container">
 							<h2 class="heading text-scribe pb-2">Messages</h2>
 							<div class="messages">
-								<div class="row">
+								<div class="row" id="message-list">
 									{% for m in messages %}
 										<div class="col-12 top-line messages-item">
 											<h3 class="text-left text-scribe text-white">{{ m.name }}</h3>
 											<p>{{ m.message }}</p>
 										</div>
 									{% endfor %}
-									
-									{% comment %} <div class="col-12 top-line messages-item">
-										<h3 class="text-left text-scribe text-white">Yayu Yeah</h3>
-										<p>Ya Allah Wizdan, dinanti hari H nya</p>
-									</div>
-									<div class="col-12 top-line messages-item">
-										<h3 class="text-left text-scribe text-white">Agus</h3>
-										<p>Dih, dah mau dewasa nih ya wkwkkw. Kalau bisa kateringnya banyakin oe mau undang juga nyak babeh.</p>
-									</div>
-									<div class="col-12 top-line messages-item">
-										<h3 class="text-left text-scribe text-white">Gina</h3>
-										<p>Semoga diberi kelancaran dan sehat selalu, amin.</p>
-									</div>
-									<div class="col-12 top-line messages-item">
-										<h3 class="text-left text-scribe text-white">Mohammad Arif</h3>
-										<p>Congrats ya pernikahannya</p>
-									</div>
-									<div class="col-12 top-line messages-item">
-										<h3 class="text-left text-scribe text-white">Yayu Yeah</h3>
-										<p>Ya Allah Wizdan, dinanti hari H nya</p>
-									</div>
-									<div class="col-12 top-line messages-item">
-										<h3 class="text-left text-scribe text-white">Agus</h3>
-										<p>Dih, dah mau dewasa nih ya wkwkkw</p>
-									</div>
-									<div class="col-12 top-line messages-item">
-										<h3 class="text-left text-scribe text-white">Gina</h3>
-										<p>Semoga diberi kelancaran dan sehat selalu, amin.</p>
-									</div>
-									<div class="col-12 top-line messages-item">
-										<h3 class="text-left text-scribe text-white">Mohammad Arif</h3>
-										<p>Congrats ya pernikahannya</p>
-									</div>
-									<div class="col-12 top-line messages-item">
-										<h3 class="text-left text-scribe text-white">Yayu Yeah</h3>
-										<p>Ya Allah Wizdan, dinanti hari H nya</p>
-									</div> {% endcomment %}
 								</div>
 							</div>
 						</div>
@@ -580,16 +544,9 @@
 			var sound = new Howl({
 				src: ["{% static 'audio/background-audio.mp3' %}"],
 				html5: true,
-				onload: function() {
-					console.log('Loaded!');
-				},
-				onplay: function() {
-					console.log('Played!');
-				}
 			});
 
 			$("#open-invitation").click(function() {
-				console.log("openInvitation fired!")
 				sound.play();
 				$("#invitation-preview").fadeOut(1000);
 				$("#invitation-content").css("visibility", "visible");
@@ -604,6 +561,28 @@
 					sound.play();
 					$("#disc").addClass("rotation");
 				} 
+			});
+
+			$("#message-form").submit(function (event) {
+				event.preventDefault();
+				$.ajax({
+					type: "POST",
+					url: "/message",
+					data: {
+						name: $("input[name=name]").val(),
+						message: $("textarea[name=message]").val(),
+						csrfmiddlewaretoken: $("input[name=csrfmiddlewaretoken]").val()
+					},
+					success: function (res) {
+						$('#message-form').trigger("reset");
+						console.log(res)
+						$("#message-list").append(`<div class="col-12 top-line messages-item">
+							<h3 class="text-left text-scribe text-white">${res.name}</h3>
+							<p>${res.message}</p>
+						</div>`)
+					}
+				});
+				return false;
 			});
 		</script>
 		<script src="{% static 'scripts/script-bundle.js' %}"></script>
