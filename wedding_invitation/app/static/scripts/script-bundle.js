@@ -1796,6 +1796,8 @@
               e.append(
                 '<li><a href="#' +
                   d(this).attr("id") +
+                  '" id="link-' +
+                  d(this).attr("id") +
                   '"><span></span></a></li>'
               );
             }),

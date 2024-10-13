@@ -77,13 +77,13 @@ Disable Uppercase:		.non-uppercase
   font-family: "Midland Luxury";
   font-weight: 400;
   font-style: italic;
-  src: url(../fonts/MidlandluxuryItalicRegular.otf);
+  src: url(../fonts/MidlandluxuryitalicRegular.otf);
 }
 @font-face {
   font-family: "Midland Luxury";
   font-weight: bolder;
   font-style: italic;
-  src: url(../fonts/MidlandluxuryItalicBold.otf);
+  src: url(../fonts/MidlandluxuryitalicBold.otf);
 }
 @font-face {
   font-family: "White Angelica";

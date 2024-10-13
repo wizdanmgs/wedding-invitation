@@ -33,7 +33,7 @@
 	<body class="state1 background-100-e">
 
 		<div class="page-border bottom colors-e background-solid">
-			<a href="#top" class="hover-effect">To <span class="highlight">Top</span></a>
+			<a href="#top" id="link-top" class="hover-effect">To <span class="highlight">Top</span></a>
 		</div>
 		<div class="page-border left colors-e background-solid">
 		</div>
@@ -91,7 +91,7 @@
 									<h6 class="text-white"><strong>Di Tempat</strong></h6>
 								</div>
 								<div class="big-separator"></div>
-								<p><a href="#" class="button background-70-d text-white border fluid" onclick="playSound();">Buka Undangan</a></p>
+								<p><a href="#" id="open-invitation" class="button background-70-d text-white border fluid">Buka Undangan</a></p>
 							</div>
 						</div>
 					</div>
@@ -616,9 +616,15 @@
 		<script src="{% static 'lib/jarallax/jarallax.min.js' %}"></script>
 		<script src="{% static 'lib/jarallax/jarallax-video.min.js' %}"></script>
 		<script src="{% static 'lib/howler.min.js' %}"></script>
+		<script src="{% static 'scripts/scroll.js' %}"></script>
 		<script>
 		(function()
 		{
+			/* INITIAL */
+			$('html, body').animate({scrollTop: '0px'}, 5);
+			disableScroll();
+			
+
 			var disableMobileAnimations = false;
 			var isWin = navigator.appVersion.indexOf("Win") !== -1;
 			if (isWin) $('html').addClass('win');
@@ -643,7 +649,34 @@
 			{
 				$('html').addClass('flat-animation');
 			}
-		})();
+
+			/* JARALLAX */
+			$(".jarallax").jarallax({
+				speed: 1,
+				videoVolume: 0,
+				});
+			})();
+
+			var sound = new Howl({
+				src: ["{% static 'audio/background-audio.mp3' %}"],
+				html5: true,
+				onload: function() {
+					console.log('Loaded!');
+				},
+				onplay: function() {
+					console.log('Played!');
+				}
+			});
+
+			$("#open-invitation").click(function() {
+				console.log("openInvitation fired!")
+				sound.play();
+				enableScroll();
+				document.getElementById("link-profile").click();
+				setTimeout(function() {
+					$("#home").fadeOut();
+				}, 1500)
+			})
 		</script>
 		<script src="{% static 'scripts/script-bundle.js' %}"></script>
 		<script>
@@ -658,29 +691,7 @@
 		if (!!navigator.userAgent.match(/Trident.*rv\:11\./))
 		{
 			$('html').addClass('ie11');
-		}
-
-		$('.jarallax').jarallax({
-			speed: 1,
-			videoVolume: 0,
-		});
-
-		function playSound() {
-			console.log("playSound fired!")
-			var sound = new Howl({
-				src: ["{% static 'audio/background-audio.mp3' %}"],
-				html5: true,
-				{% comment %} autoplay: true, {% endcomment %}
-				onload: function() {
-					console.log('Loaded!');
-				},
-				onplay: function() {
-					console.log('Played!');
-				}
-			});
-
-			sound.play();
-		}
+		}		
 		</script>
 	</body>
 </html>
