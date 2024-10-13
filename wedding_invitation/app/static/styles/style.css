@@ -4901,13 +4901,16 @@ html {
   font-family: "Lateef", Helvetica, sans-serif;
 }
 .text-arabic-small {
-  font-size: 20px;
+  font-size: 25px;
 }
 .text-small {
-  font-size: 7px;
+  font-size: 8px;
 }
 .text-smaller {
-  font-size: 6px;
+  font-size: 7px;
+}
+.text-bottom {
+  vertical-align: bottom;
 }
 .img-padding {
   padding: 10px;
@@ -4929,4 +4932,36 @@ html {
 }
 .pb-5 {
   padding-bottom: 5rem !important;
+}
+
+.disc {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 100px;
+  margin-right: 10px;
+  width: 20px;
+  z-index: 999;
+}
+
+.rotation {
+  animation: rotation 5s infinite linear;
+  -webkit-animation: rotation 5s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
 }

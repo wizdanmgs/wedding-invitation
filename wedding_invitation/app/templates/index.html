@@ -79,6 +79,7 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-md-6">
+								
 								<div class="textillate" data-textillate-options="{loop:true, in:{effect:'flipInY', reverse:false}, out:{effect:'flipOutY', reverse:false}}">
 									<ul class="texts">
 										<li>We Are Inviting You To</li>
@@ -127,7 +128,7 @@
 							</div>
 						</div>
 						<div class="row pb-2">
-							<div class="col-xs-6">
+							<div class="col-xs-5">
 								<div class="hover-overlay">
 									<img alt="Wizdan" src="{% static 'images/prewed/groom.jpg' %}" title="Wizdan" class="fluid-width img-padding">
 									<div class="overlay background-90-b">
@@ -145,29 +146,22 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-xs-6">
-								<div class="caption position-bottom">
-									<p class="text-right">
-										<span style="font-size: 10px">Wizdan</span>
-										<span style="font-size: 8px">Mohammad Gibran Shodri, S.Tr.Kom.</span>
-									</p>
-									<p class="text-white text-smaller text-right">
-										Putra pertama dari <br/>
-										Bpk Mohammad <br/> Ihsan Sodri, S.Pd <br />
-										dan Ibu Ai Ratnasasi, S.Pd.
-									</p>
+							<div class="col-xs-7">
+								<div class="caption">
+									<div class="text-right">
+										<h6>Wizdan</h6>
+										<p>Mohammad Gibran Shodri, S.Tr.Kom.</p>
+										<p class="text-white text-smaller">
+											Putra pertama dari
+											Bpk Mohammad Ihsan Sodri, S.Pd
+											dan Ibu Ai Ratnasasi, S.Pd.
+										</p>
+									</div>
 								</div>
 							
 							</div>
 
 						</div>
-					</div>
-				</div>
-			</div>
-			<div class="view">
-				<img alt class="bg" src="{% static 'images/prewed/183.jpg' %}" />
-				<div class="content colors-h p-0">
-					<div class="container">
 						<div class="row pb-2">
 							<div class="col-xs-6">
 								<div class="caption position-bottom">
@@ -204,6 +198,13 @@
 					</div>
 				</div>
 			</div>
+			{% comment %} <div class="view">
+				<img alt class="bg" src="{% static 'images/prewed/183.jpg' %}" />
+				<div class="content colors-h p-0">
+					<div class="container">
+					</div>
+				</div>
+			</div> {% endcomment %}
 		</section>
 		<section id="event">
 			<div class="view">
@@ -567,6 +568,7 @@
 
 		{% comment %} BEGIN: Footer {% endcomment %}
 		<footer class="page-transition non-preloading">
+			<img id="disc" class="disc rotation" src="{% static 'svg/disc.svg' %}" alt="">
 			<div class="jarallax" data-jarallax data-video-src="mp4:{% static 'videos/bean.mp4' %}">
 				<div class="view">
 					<div class="content ull-size colors-h">
@@ -622,6 +624,7 @@
 		{
 			/* INITIAL */
 			$('html, body').animate({scrollTop: '0px'}, 5);
+			$("#disc").hide();
 			disableScroll();
 			
 
@@ -672,11 +675,23 @@
 				console.log("openInvitation fired!")
 				sound.play();
 				enableScroll();
-				document.getElementById("link-profile").click();
+				$("#link-profile").click();
 				setTimeout(function() {
-					$("#home").fadeOut();
-				}, 1500)
-			})
+					$("#home").hide();
+					$("#disc").fadeIn(500);
+					document.getElementById("profile").scrollIntoView();
+				}, 2000)
+			});
+
+			$("#disc").click(function() {
+				if(sound.playing()) {
+					sound.pause();
+					$("#disc").removeClass("rotation");
+				} else {
+					sound.play();
+					$("#disc").addClass("rotation");
+				} 
+			});
 		</script>
 		<script src="{% static 'scripts/script-bundle.js' %}"></script>
 		<script>
