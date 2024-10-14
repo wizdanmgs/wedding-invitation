@@ -579,6 +579,7 @@
 		<script>
 		(function()
 		{
+			$('html, body').animate({scrollTop:0},500);
 			var disableMobileAnimations = false;
 			var isWin = navigator.appVersion.indexOf("Win") !== -1;
 			if (isWin) $('html').addClass('win');
