@@ -82,6 +82,7 @@
 		<link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap-custom.min.css' %}" />
 		<link rel="stylesheet" href="{% static 'lib/linecons/style.css' %}" />
 		<link rel="stylesheet" href="{% static 'lib/jarallax/jarallax.min.css' %}" />
+		<link rel="stylesheet" href="{% static 'bower_components/countdown/countdown.css' %}" />
 		<link rel="stylesheet" href="{% static 'styles/style.css' %}" />
 		<link rel="stylesheet" href="{% static 'theme-custom.css' %}" />
 		<link rel="shortcut icon" href="{% static 'favicon.ico' %}" type="image/x-icon'' %}" />
@@ -466,6 +467,37 @@
 					</div>
 				</div>
 			</section>
+			<section id="countdown">
+				<div class="view">
+					<img alt class="bg" src="{% static 'images/bg-countdown.jpg' %}" />
+					<div class="content colors-h">
+						<div class="container">
+							<h2 class="heading text-scribe pb-2">Save The Day</h2>
+						</div>
+						<div class="countdown-container">
+							<div class="days-container">
+								<div class="days"></div>
+								<div class="days-label">days</div>
+							</div>
+							
+							<div class="hours-container">
+								<div class="hours"></div>
+								<div class="hours-label">hours</div>
+							</div>
+							
+							<div class="minutes-container">
+								<div class="minutes"></div>
+								<div class="minutes-label">minutes</div>
+							</div>
+							
+							<div class="seconds-container">
+								<div class="seconds"></div>
+								<div class="seconds-label">seconds</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 			{% comment %} END: Page content {% endcomment %}
 
 			{% comment %} BEGIN: Footer {% endcomment %}
@@ -540,6 +572,7 @@
 		<script src="{% static 'bower_components/textillate/assets/jquery.lettering.js' %}"></script>
 		<script src="{% static 'bower_components/textillate/assets/jquery.fittext.js' %}"></script>
 		<script src="{% static 'bower_components/textillate/jquery.textillate.js' %}"></script>
+		<script src="{% static 'bower_components/countdown/countdown.js' %}"></script>
 		<script src="{% static 'lib/prism/prism.js' %}"></script>
 		<script src="{% static 'lib/jarallax/jarallax.min.js' %}"></script>
 		<script src="{% static 'lib/jarallax/jarallax-video.min.js' %}"></script>
