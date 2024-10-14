@@ -9,7 +9,7 @@ def index(request):
     to = request.GET.get("to")
     context = {
         "to": to,
-        "messages": Message.objects.all(),
+        "messages": Message.objects.all().order_by("id").reverse(),
     }
     return render(request, "index.html", context)
 
