@@ -67,7 +67,6 @@
 		<script>
 			$(function() {
 				{% comment %} $("#invitation-content").css("visibility", "hidden"); {% endcomment %}
-				disableScroll();
 				$("#disc").hide();
 				$("#bank-number-copied").hide();
 				$("#message-sent").hide();
@@ -580,6 +579,9 @@
 		(function()
 		{
 			$('html, body').animate({scrollTop:0},500);
+			setTimeout(function() {
+				disableScroll();
+			}, 600)
 			var disableMobileAnimations = false;
 			var isWin = navigator.appVersion.indexOf("Win") !== -1;
 			if (isWin) $('html').addClass('win');
