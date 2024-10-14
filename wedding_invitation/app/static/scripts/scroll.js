@@ -35,7 +35,6 @@ var wheelEvent =
 
 // call this to Disable
 function disableScroll() {
-  console.log("Disable scroll");
   window.addEventListener("DOMMouseScroll", preventDefault, false); // older FF
   window.addEventListener(wheelEvent, preventDefault, wheelOpt); // modern desktop
   window.addEventListener("touchmove", preventDefault, wheelOpt); // mobile
@@ -43,7 +42,6 @@ function disableScroll() {
 }
 
 function enableScroll() {
-  console.log("Enable scroll");
   window.removeEventListener("DOMMouseScroll", preventDefault, false); // older FF
   window.removeEventListener(wheelEvent, preventDefault, wheelOpt); // modern desktop
   window.removeEventListener("touchmove", preventDefault, wheelOpt); // mobile
