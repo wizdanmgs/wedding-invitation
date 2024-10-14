@@ -68,6 +68,7 @@
 			$(function() {
 				{% comment %} $("#invitation-content").css("visibility", "hidden"); {% endcomment %}
 				disableScroll();
+				$("#disc").hide();
 				$("#bank-number-copied").hide();
 				$("#message-sent").hide();
 			})
@@ -470,6 +471,29 @@
 			{% comment %} BEGIN: Footer {% endcomment %}
 			<footer class="page-transition non-preloading">
 				<img id="disc" class="disc rotation" src="{% static 'images/icon/disc.svg' %}" alt="">
+				<div class="view" id="turut-mengundang">
+					{% comment %} <img alt class="bg" src="{% static 'images/bg-journey.jpg' %}" /> {% endcomment %}
+					<div class="content half-size colors-h">
+						<div class="container text-center">
+							<h2 class="heading text-scribe pb-2">Turut Mengundang</h2>
+							<div class="row ">
+								<div class="col-md-3 pb-2">
+									<h3 class="row heading text-scribe text-white">Pihak Mempelai Pria</h3>
+									<p>1. Engkos Kosasih Shodri</p>
+									<p>2. Dr. Agam Supriyanta, M.M.Pd., M.H. (Plt. Kepala Sekolah SMAN 1 Cibeber)</p>
+									<p>3.Rahmat Edya Mulyadi S. Pd, MM. (Kepala Sekolah SDN Mayak 1)</p>
+								</div>
+								<div class="col-md-3 pb-2">
+									<h3 class="row heading text-scribe text-white">Pihak Mempelai Wanita</h3>
+									<p>1. Keluarga Besar Bpk. Ahmad Zakaria</p>
+									<p>2. Keluarga Besar Bpk. Iyong (alm)</p>
+									<p>3. Mayjend TNI (Purn.) Puguh Santoso, S.E., M.M.</p>
+									<p>4. Mayjend TNI (Purn.) Wiyarto, S.Sos.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 				<div class="jarallax" data-jarallax data-video-src="mp4:{% static 'videos/thank-you-480.mp4' %}">
 					<div class="view">
 						<div class="content ull-size colors-h">
