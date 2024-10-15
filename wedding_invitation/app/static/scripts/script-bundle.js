@@ -1,4 +1,3 @@
-/*! Skrollex */
 !(function a(b, c, d) {
   function e(g, h) {
     if (!c[g]) {
