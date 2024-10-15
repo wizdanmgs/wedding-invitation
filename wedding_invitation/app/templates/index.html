@@ -457,7 +457,7 @@
 														</div>
 														<div class="col-xs-6 col-md-4">
 														<div class="text-center">
-															<input class="button text-center link-e" type="submit" value="Kirim Do'a">
+															<input class="button background-lite-b border-heading-b heading-b" type="submit" value="Kirim Do'a">
 														</div>
 														</div>
 													</div>
@@ -665,26 +665,30 @@
 
 			$("#message-form").submit(function (event) {
 				event.preventDefault();
-				$.ajax({
-					type: "POST",
-					url: "/message",
-					data: {
-						name: $("input[name=name]").val(),
-						message: $("textarea[name=message]").val(),
-						csrfmiddlewaretoken: csrfmiddlewaretoken
-					},
-					success: function (res) {
-						$('#message-form').trigger("reset");
-						$("#message-sent").fadeIn(500)
-						setTimeout(function() {
-							$("#message-sent").fadeOut(500)
-						}, 5000);
-						$("#message-list").append(`<div class="col-12 top-line messages-item">
-							<h3 class="text-left text-scribe text-white">${res.name}</h3>
-							<p>${res.message}</p>
-						</div>`)
-					}
-				});
+				const name = $("input[name=name]").val();
+				const message = $("textarea[name=message]").val()
+				if (name && message && csrfmiddlewaretoken) {
+					$.ajax({
+						type: "POST",
+						url: "/message",
+						data: {
+							name,
+							message,
+							csrfmiddlewaretoken,
+						},
+						success: function (res) {
+							$('#message-form').trigger("reset");
+							$("#message-sent").fadeIn(500)
+							setTimeout(function() {
+								$("#message-sent").fadeOut(500)
+							}, 5000);
+							$("#message-list").prepend(`<div class="col-12 top-line messages-item">
+								<h3 class="text-left text-scribe text-white">${res.name}</h3>
+								<p>${res.message}</p>
+							</div>`)
+						}
+					});
+				}
 				return false;
 			});
 		</script>
