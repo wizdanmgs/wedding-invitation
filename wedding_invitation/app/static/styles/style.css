@@ -182,10 +182,18 @@ h2 {
   font-size: 70px;
   line-height: 84px;
 }
+.emphasis {
+  font-size: 50px;
+  line-height: 100px;
+}
 @media (max-width: 991px) {
   h2 {
     font-size: 35px;
     line-height: 48px;
+  }
+  .emphasis {
+    font-size: 28px !important;
+    line-height: 60px !important;
   }
 }
 h3 {
