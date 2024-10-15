@@ -2795,8 +2795,8 @@ html.mobile .vimeo-bg {
   line-height: 150px;
   -moz-border-radius: 15px;
   -webkit-border-radius: 15px;
-  border-radius: 15px;
-  border: 1px solid;
+  /* border-radius: 15px;
+  border: 1px solid; */
   overflow: hidden;
   margin: 0 auto;
 }
