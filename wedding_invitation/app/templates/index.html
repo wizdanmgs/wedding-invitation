@@ -637,6 +637,7 @@
 			var csrfmiddlewaretoken = $("input[name=csrfmiddlewaretoken]").val()
 
 			$("#open-invitation").click(function() {
+				$("#disc").show();
 				sound.play();
 				enableScroll();
 				$("#invitation-preview").fadeOut(1000);
